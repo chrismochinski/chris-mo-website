@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   background: #000000;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -160px; //fix changed this - was too big
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: red;
+  color: white; //fix get better colors to match vid background
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -104,6 +104,7 @@ export const NavBtnLink = styled(LinkR)` //important currently just the "sign in
   padding: 10px 22px; //TOP / RIGHT / BOTTOM / LEFT
   color: #010606; //super dark robins egg blue, basically black
   font-size: 16px;
+  font-weight: 600;
   outline: none;
   border: none;
   cursor: pointer;

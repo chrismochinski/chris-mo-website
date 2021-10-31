@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa"; 
 
 
 export const SidebarContainer = styled.aside`
@@ -19,7 +19,7 @@ opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')}; //optimize
 top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; //optimize
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled(FaTimes)` //the close (X) button in the open nav 
 color: #fff;
 `;
 
