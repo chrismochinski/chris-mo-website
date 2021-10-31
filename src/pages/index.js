@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import TechnologiesSection from '../components/TechnologiesSection';
+import { homeObjOne } from '../components/TechnologiesSection/Data';
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection />
-            <TechnologiesSection />
+            <TechnologiesSection {...homeObjOne}/>
         </Router>
     )
 };
