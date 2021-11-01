@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../ButtonElement";
 import Marquee from "react-fast-marquee";
-import './TechnologiesSection.css'
+import "./TechnologiesSection.css";
 import ReactImage from "../TechImages/ReactImage";
 import JavascriptImage from "../TechImages/JavascriptImage";
 import HtmlImage from "../TechImages/HtmlImage";
@@ -10,6 +10,10 @@ import CssImage from "../TechImages/CssImage";
 import ExpressImage from "../TechImages/ExpressImage";
 import MaterialUiImage from "../TechImages/MaterialUiImage";
 import ReduxSagaImage from "../TechImages/ReduxSagaImage";
+import PostgresImage from "../TechImages/PostgresImage";
+import PassportImage from "../TechImages/PassportImage";
+import ApiImage from "../TechImages/ApiImage";
+import GitImage from "../TechImages/GitImage";
 
 
 import {
@@ -28,7 +32,7 @@ import {
 } from "./TechnologiesElements.js";
 
 const TechnologiesSection = ({
-   lightBg,
+  lightBg,
   imgStart,
   topLine,
   lightText,
@@ -41,7 +45,7 @@ const TechnologiesSection = ({
   primary,
   darkText,
   dark,
-  dark2
+  dark2,
 }) => {
   return (
     <>
@@ -71,20 +75,26 @@ const TechnologiesSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-              <Marquee 
-              className='marquee' 
-              gradientColor={[0, 6, 6]}
-              pauseOnHover={true}
-              speed={70}
-              >
-                <ReactImage />
-                <JavascriptImage />
-                <ReduxSagaImage />
-                <HtmlImage />
-                <CssImage />
-                <MaterialUiImage />
-                <NodeImage />
-                <ExpressImage />
+
+                <Marquee
+                  className="marquee"
+                  gradientColor={[0, 6, 6]}
+                  pauseOnHover={true}
+                  speed={70}
+                >
+                  <PassportImage />
+                  <HtmlImage />
+                  <ReactImage />
+                  <JavascriptImage />
+                  <CssImage />
+                  <MaterialUiImage />
+                  <ReduxSagaImage />
+                  <NodeImage />
+                  <ExpressImage />
+                  <PostgresImage />
+                  <GitImage />
+                  <ApiImage />
+
                 </Marquee>
               </ImgWrap>
             </Column2>

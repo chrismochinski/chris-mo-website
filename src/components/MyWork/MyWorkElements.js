@@ -58,13 +58,13 @@ export const MyWorkCard = styled.div`
 
 export const MyWorkIcon = styled.img`
   height: 160px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 `;
 
 export const MyWorkH1 = styled.h1`
- font-size: 2.5rem;
+ font-size: 3rem;
   color: #fff;
-  margin-bottom: 64px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;

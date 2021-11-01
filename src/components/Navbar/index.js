@@ -46,7 +46,7 @@ useEffect(() => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}>Greetings!</NavLogo>
+                  offset={-80}>Chris Mochinski</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
