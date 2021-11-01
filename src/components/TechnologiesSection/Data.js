@@ -1,5 +1,5 @@
 export const homeObjOne = {
-    id: 'about',
+    id: 'about-me',
     lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -7,7 +7,7 @@ export const homeObjOne = {
     headline: 'I mm pretty good I guess',
     description: 'Here is a long description which maybe we will just go ahead and change to something awesome cuz this is dumb',
     buttonLabel: 'Get started',
-    imgStart: false, //important flip column - img first or second
+    imgStart: false, 
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
     dark: true,
@@ -24,7 +24,7 @@ export const homeObjTwo = {
     headline: 'This Will Go Away ',
     description: 'This is gonna be a list of technologies',
     buttonLabel: 'Get started',
-    imgStart: true, //important flip column - img first or second
+    imgStart: true, 
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
     dark: false,
@@ -41,7 +41,7 @@ export const homeObjThree = {
     headline: 'The following headline Big',
     description: 'Here is a long description which maybe we will just go ahead and change to something awesome cuz this is dumb',
     buttonLabel: 'Get started',
-    imgStart: false, //important flip column - img first or second
+    imgStart: false, 
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
     dark: false,

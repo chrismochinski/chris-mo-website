@@ -8,6 +8,8 @@ import Sidebar from '../components/Sidebar';
 import TechnologiesSection from '../components/TechnologiesSection';
 import { homeObjOne } from '../components/TechnologiesSection/Data';
 import { homeObjTwo } from '../components/TechnologiesSection/Data';
+import { homeObjThree } from '../components/TechnologiesSection/Data';
+
 
 const Home = () => {
 
@@ -25,7 +27,7 @@ const Home = () => {
             <HeroSection />
             <TechnologiesSection {...homeObjOne}/>
             <TechnologiesSection {...homeObjTwo} />
-            <MyWork />
+            <MyWork {...homeObjThree}/>
         </Router>
     )
 };

@@ -26,7 +26,7 @@ const TechnologiesSection = ({
   headline,
   description,
   buttonLabel,
-  img, //fix
+  img, //sourcing from elsewhere
   alt,
   id,
   primary,
