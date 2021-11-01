@@ -6,9 +6,11 @@ import MyWork from '../components/MyWork';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import TechnologiesSection from '../components/TechnologiesSection';
+import AboutMeSection from '../components/AboutMeSection';
 import { homeObjOne } from '../components/TechnologiesSection/Data';
 import { homeObjTwo } from '../components/TechnologiesSection/Data';
 import { homeObjThree } from '../components/TechnologiesSection/Data';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -25,9 +27,10 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection />
-            <TechnologiesSection {...homeObjOne}/>
+            <AboutMeSection {...homeObjOne}/>
             <TechnologiesSection {...homeObjTwo} />
             <MyWork {...homeObjThree}/>
+            <Footer />
         </Router>
     )
 };

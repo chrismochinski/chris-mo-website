@@ -6,7 +6,7 @@ import {
   MyWorkCard,
   MyWorkIcon,
   MyWorkH2,
-  MyWorkP,
+  MyWorkP, BtnWrap
 } from "./MyWorkElements.js";
 import Icon1 from "../../images/reactIcon.png";
 import Icon2 from "../../images/reactIcon.png";
@@ -49,6 +49,7 @@ const MyWork = () => {
             </MyWorkP>
           </MyWorkCard>
         </MyWorkWrapper>
+      
       </MyWorkContainer>
     </>
   );

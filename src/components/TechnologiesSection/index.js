@@ -43,9 +43,9 @@ const TechnologiesSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button to="home"
+                {/* <Subtitle darkText={darkText}>{description}</Subtitle> */}
+                {/* <BtnWrap>
+                  <Button to="my-work"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -55,9 +55,9 @@ const TechnologiesSection = ({
                   dark={dark ? 1 : 0}
                   dark2={dark2 ? 1 : 0}
                   >
-                    {buttonLabel}
+                    My Work
                     </Button>
-                </BtnWrap>
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>

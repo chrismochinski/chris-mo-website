@@ -1,25 +1,25 @@
 export const homeObjOne = {
     id: 'about-me',
-    lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+    lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
     topLine: 'About Me',
-    headline: 'I mm pretty good I guess',
-    description: 'Here is a long description which maybe we will just go ahead and change to something awesome cuz this is dumb',
+    headline: "I'll Keep it Short...",
+    description: 'I live to solve puzzles, help people, be reliable, continuously learn and grow my knowledge and capabilities. I am in love with limbic friction and challenges fuel me.',
     buttonLabel: 'Get started',
     imgStart: false, 
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
-    dark: true,
-  primary: true,
-  darkText: false
+    dark: false,
+  primary: false,
+  darkText: true
 }
 
 export const homeObjTwo = {
     id: 'technologies',
-    lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+    lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
     topLine: 'Technologies',
     headline: 'This Will Go Away ',
     description: 'This is gonna be a list of technologies',
@@ -27,9 +27,9 @@ export const homeObjTwo = {
     imgStart: true, 
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
-    dark: false,
-    primary: false,
-    darkText: true
+    dark: true,
+    primary: true,
+    darkText: false
 }
 
 export const homeObjThree = {
@@ -50,3 +50,14 @@ export const homeObjThree = {
 }
 
 
+
+
+
+// lightBg: true,
+// lightText: false,
+// lightTextDesc: false,
+
+
+// dark: false,
+//     primary: false,
+//     darkText: true

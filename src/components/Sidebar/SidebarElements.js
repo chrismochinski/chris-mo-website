@@ -40,7 +40,7 @@ color: #fff;
 export const SidebarMenu = styled.ul`
 display: grid;
 grid-template-columns: 1fr; //research
-grid-template-rows: repeat(6, 80px); //research --fix shrink second number, first numb ??
+grid-template-rows: repeat(6, 50px); //research --fix shrink second number, first numb ??
 text-align: center;
 
 @media screen and (max-width: 480px) { //fix breakpoint, change later //research
@@ -75,7 +75,7 @@ export const SidebarRoute = styled(LinkR)` //react router link
 border-radius: 50px;
 background: #01bf71; //same teal green
 white-space: nowrap; //https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
-padding: 16px 64px;
+padding: 16px 32px;
 color: #010606;
 font-size: 16px;
 outline: none;

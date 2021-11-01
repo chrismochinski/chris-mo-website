@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Video from "../../videos/hero-background-2.mp4";
+import Video from "../../videos/hero-bg-blur-type.mp4";
 import { Button } from "../ButtonElement";
 import {
   HeroContainer,
@@ -32,8 +32,19 @@ const HeroSection = () => {
             I love: <u>TO MAKE THIS A TYPE AREA</u>
           </HeroP>
           <HeroBtnWrapper>
-            <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
-              Let's Connect {hover ? <ArrowForward /> : <ArrowRight />}
+            <Button
+              to="about-me"
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+              primary="true"
+              dark="true"
+              to="about-me"
+              smooth={true}
+              duration={500}
+              exact="true"
+              offset={-80}
+            >
+              More About Me {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>
