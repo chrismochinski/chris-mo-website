@@ -29,11 +29,13 @@ max-width: 1000px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 60px;
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
+    margin-bottom: 100px;
   }
 `;
 
@@ -55,6 +57,7 @@ export const MyWorkCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
 
   @media screen and (max-width: 480px) {
     max-width: 460px;
@@ -107,11 +110,13 @@ padding-top: 0;
 export const MyWorkH2 = styled.h2`
   font-size: 1.3rem;
   margin-bottom: 10px;
+  font-weight: 600;
 `;
 
 export const MyWorkP = styled.p`
  font-size: .9rem;
   text-align: center;
+  font-weight: 200;
 `;
 
 

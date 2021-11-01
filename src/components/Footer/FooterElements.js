@@ -10,7 +10,7 @@ background-color: #101522;
 `;
 
 export const FooterWrap = styled.div`
-padding: 48px 24px;
+padding: 32px 24px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -22,6 +22,7 @@ margin: 0 auto;
 export const FooterLinksContainer = styled.div`
   display: flex;
   justify-content: center;
+
 
   @media screen and (max-width: 820px) {
     padding-top: 8px;

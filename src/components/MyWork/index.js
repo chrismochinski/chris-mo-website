@@ -26,7 +26,10 @@ const MyWork = () => {
     <>
       <MyWorkContainer id="my-work">
         <MyWorkH1>My Work</MyWorkH1>
-        <MyWorkSubtitle>I'm proud of this stuff, and I hope you like it. Also, all my GitHub repositories have thorough README files. Give 'em a peek!</MyWorkSubtitle>
+        <MyWorkSubtitle>
+          I'm proud of this stuff, and I hope you like it. Also, all my GitHub
+          repositories have thorough README files. Give 'em a peek!
+        </MyWorkSubtitle>
         <MyWorkWrapper>
           <MyWorkCard>
             <a href="https://youtu.be/_slC4RNX-d8" target="_blank">
@@ -61,9 +64,18 @@ const MyWork = () => {
             </MyWorkP>
 
             <MyWorkButtonWrapper>
-              <MyWorkTryItButton>Try</MyWorkTryItButton>
-
-              <MyWorkGitHubButton>GitHub</MyWorkGitHubButton>
+              <a
+                href="https://mo-made-a-to-do-list-app.herokuapp.com/"
+                target="_blank"
+              >
+                <MyWorkTryItButton>Try</MyWorkTryItButton>
+              </a>
+              <a
+                href="https://github.com/chrismochinski/weekend-sql-to-do-list"
+                target="_blank"
+              >
+                <MyWorkGitHubButton>GitHub</MyWorkGitHubButton>
+              </a>
             </MyWorkButtonWrapper>
           </MyWorkCard>
 
