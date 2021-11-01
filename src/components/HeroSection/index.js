@@ -3,8 +3,6 @@ import Video from "../../videos/hero-bg-blur-type.mp4";
 import { Button } from "../ButtonElement";
 import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
-import './HeroSection.css';
-
 import {
   HeroContainer,
   HeroBg,

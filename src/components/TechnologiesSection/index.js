@@ -1,6 +1,15 @@
 import React from "react";
 import { Button } from "../ButtonElement";
-import BeefPants from '../../images/reactIcon.png';
+import Marquee from "react-fast-marquee";
+import './TechnologiesSection.css'
+import ReactImage from "../TechImages/ReactImage";
+import JavascriptImage from "../TechImages/JavascriptImage";
+import HtmlImage from "../TechImages/HtmlImage";
+import NodeImage from "../TechImages/NodeImage";
+import CssImage from "../TechImages/CssImage";
+import ExpressImage from "../TechImages/ExpressImage";
+import MaterialUiImage from "../TechImages/MaterialUiImage";
+import ReduxSagaImage from "../TechImages/ReduxSagaImage";
 
 
 import {
@@ -43,7 +52,7 @@ const TechnologiesSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                {/* <Subtitle darkText={darkText}>{description}</Subtitle> */}
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 {/* <BtnWrap>
                   <Button to="my-work"
                   smooth={true}
@@ -62,7 +71,21 @@ const TechnologiesSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={BeefPants} alt={alt}/>
+              <Marquee 
+              className='marquee' 
+              gradientColor={[0, 6, 6]}
+              pauseOnHover={true}
+              speed={70}
+              >
+                <ReactImage />
+                <JavascriptImage />
+                <ReduxSagaImage />
+                <HtmlImage />
+                <CssImage />
+                <MaterialUiImage />
+                <NodeImage />
+                <ExpressImage />
+                </Marquee>
               </ImgWrap>
             </Column2>
           </TechnologiesRow>

@@ -7,7 +7,7 @@ export const homeObjOne = {
     headline: "I'll Keep it Short...",
     description: 'I live to solve puzzles, help people, be reliable, continuously learn and grow my knowledge and capabilities. I am in love with limbic friction and challenges fuel me.',
     buttonLabel: 'Get started',
-    imgStart: false, 
+    imgStart: true, 
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
     dark: false,
@@ -21,10 +21,10 @@ export const homeObjTwo = {
   lightText: true,
   lightTextDesc: true,
     topLine: 'Technologies',
-    headline: 'This Will Go Away ',
-    description: 'This is gonna be a list of technologies',
+    headline: 'I Make Stuff With:',
+    description: '(mouseover to pause)',
     buttonLabel: 'Get started',
-    imgStart: true, 
+    imgStart: false, 
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
     dark: true,
