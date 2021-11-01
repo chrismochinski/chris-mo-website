@@ -9,7 +9,8 @@ align-items: center;
 text-align: left; //fix
 padding: 0 30px;
 height: 800px;
-/* position: relative; */ //important ????
+/* position: relative; */ //important ???? Removing fits the vid better
+
 z-index: 1; //research
 
 :before {

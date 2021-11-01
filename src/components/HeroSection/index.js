@@ -36,11 +36,12 @@ const HeroSection = () => {
           <VideoBg autoPlay loop muted type="video/mp4" src={Video} />
         </HeroBg>
         <HeroContent>
-          <HeroH1>My Name Is Mo</HeroH1>
+          <HeroH1>My Name Is Mo,</HeroH1>
           <HeroP>
             and I love: {" "} 
           
           <Typewriter className='typing'
+         
           words={['technology', 'web design', 'React', 'JavaScript', 'rock & roll', 'mobile development', 'puzzles', 'full-stack development', 'coffee']}
           loop={false}
           cursor

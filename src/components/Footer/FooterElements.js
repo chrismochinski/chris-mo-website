@@ -68,7 +68,7 @@ font-size: 18px;
 cursor: pointer;
 
 &:hover {
-    color: #027BCE;
+    color: #309DE7;
     transition: 0.3s ease-out; //research
 }
 `;

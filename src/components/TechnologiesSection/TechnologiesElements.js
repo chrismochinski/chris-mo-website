@@ -65,7 +65,7 @@ text-align: right;
 `;
 
 export const TopLine = styled.div`
-  color: #027BCE;
+  color: #309DE7;
   font-size: 18px;
   /* line-height: 16px; //research */
   font-weight: 700;

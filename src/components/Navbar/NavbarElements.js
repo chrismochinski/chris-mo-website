@@ -92,14 +92,14 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #027BCE;
+    border-bottom: 3px solid #309DE7;
   }
 `;
 
 
 export const NavBtnLink = styled(LinkR)` //important currently just the "sign in" button top right - teal round
-  border-radius: 5%; //rounded corner on button
-  background: #027BCE;
+  border-radius: 10px; //rounded corner on button
+  background: #309DE7;
   white-space: nowrap;
   padding: 10px 14px; //TOP / RIGHT / BOTTOM / LEFT
   color: #010606; //super dark robins egg blue, basically black
@@ -117,14 +117,6 @@ export const NavBtnLink = styled(LinkR)` //important currently just the "sign in
     color: #010606; // super dark robins egg blue basically black
   }
 `;
-
-
-
-
-
-
-
-
 
 
 
@@ -223,14 +215,14 @@ export const NavBtnLink = styled(LinkR)` //important currently just the "sign in
 //   cursor: pointer;
 
 //   &.active {
-//     border-bottom: 3px solid #027BCE;
+//     border-bottom: 3px solid #309DE7;
 //   }
 // `;
 
 
 // export const NavBtnLink = styled(LinkR)` //important currently just the "sign in" button top right - teal round
 //   border-radius: 50px; //rounded corner on button
-//   background: #027BCE;
+//   background: #309DE7;
 //   white-space: nowrap;
 //   padding: 10px 22px; //TOP / RIGHT / BOTTOM / LEFT
 //   color: #010606; //super dark robins egg blue, basically black

@@ -61,7 +61,7 @@ export const SidebarLink = styled(LinkS)` //react SCROLL
  cursor: pointer;
 
  &:hover {
-     color: #027BCE; //the same teal green
+     color: #309DE7; //the same teal green
      transition: 0.2 ease-in-out;
  }
 `;
@@ -72,8 +72,8 @@ justify-content: center;
 `;
 
 export const SidebarRoute = styled(LinkR)` //react router link
-border-radius: 5%;
-background: #027BCE; //same teal green
+border-radius: 10px;
+background: #309DE7; //same teal green
 white-space: nowrap; //https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 padding: 16px 32px;
 color: #010606;
