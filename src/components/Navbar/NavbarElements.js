@@ -40,6 +40,14 @@ export const NavLogo = styled(LinkS)`
   margin-left: 5px;
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+
+  &:hover {
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+
+  }
 `;
 
 export const MobileIcon = styled.div`
