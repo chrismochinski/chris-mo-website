@@ -3,6 +3,8 @@ import Video from "../../videos/hero-bg-blur-type.mp4";
 import { Button } from "../ButtonElement";
 import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
+import './HeroSection.css'
+
 import {
   HeroContainer,
   HeroBg,
@@ -38,8 +40,8 @@ const HeroSection = () => {
           <HeroP>
             and I love: {" "} 
           
-          <Typewriter 
-          words={['technology', 'web design', 'software development', 'React', 'JavaScript', 'CSS']}
+          <Typewriter className='typing'
+          words={['technology', 'web design', 'React', 'JavaScript', 'rock & roll', 'mobile development', 'puzzles', 'full-stack development', 'coffee']}
           loop={false}
           cursor
           cursorStyle='_'

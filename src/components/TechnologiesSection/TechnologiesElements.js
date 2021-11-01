@@ -5,20 +5,24 @@ color: #fff;
 background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')}; //first is white on a red scale
 
 @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 0 0;
 }
 `;
 
 export const TechnologiesWrapper = styled.div` //important //fix THIS WILL BECOME MY TECH SCROLLER ICONS!!!!
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 600px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 750px;
+}
 `;
 
 export const TechnologiesRow = styled.div`
@@ -36,22 +40,23 @@ grid-template-areas: ${({imgStart}) =>
 
 export const Column1 = styled.div`
 /* margin-bottom: 15px; */
-padding: 0 15px;
+padding: 0 24px;
 grid-area: col1;
 
 `;
 
 export const Column2 = styled.div`
-margin-bottom: 15px;
+margin-bottom: 10px;
 padding: 0 15px;
 grid-area: col2;
 
 `;
 
 export const TextWrapper = styled.div`
-max-width: 540px;
+max-width: 580px;
 padding-top: 0;
-padding-bottom: 60px;
+padding-bottom: 0;
+margin-bottom: 0;
 text-align: right;
 
 @media screen and (max-width: 768px) {
@@ -71,14 +76,14 @@ export const TopLine = styled.div`
 
 export const Heading = styled.h1`
 margin-bottom: 0;
-font-size: 40px;
+font-size: 46px;
 line-height: 1.1;
 font-weight: 600;
 color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
 
 
 @media screen and (max-width: 480px) {
-    font-size: 36px;
+    font-size: 40px;
   }
 `;
 
@@ -92,7 +97,7 @@ color: ${({ darkText }) => (darkText ? '#010606' : '#f7f8fa')};
 
 @media screen and (max-width: 768px) {
   text-align: center; 
-  font-size: 18px;   
+  font-size: 16px;   
   }
 `;
 

@@ -9,7 +9,7 @@ align-items: center;
 text-align: left; //fix
 padding: 0 30px;
 height: 800px;
-position: relative;
+/* position: relative; */ //important ????
 z-index: 1; //research
 
 :before {
@@ -85,12 +85,13 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-margin-top: 8px;
+margin-top: 16px;
 color: #fff;
 font-weight: 400;
 font-size: 30px;
 text-align: left;
 max-width: 600px;
+
 
 
 @media screen and (max-width: 768px) { //shrink on smaller screen
@@ -102,6 +103,7 @@ max-width: 600px;
     }
 
 `;
+
 
 
 
@@ -124,3 +126,4 @@ margin-left: 8px;
 font-size: 20px;
 
 `;
+
