@@ -55,7 +55,7 @@ padding-bottom: 60px;
 `;
 
 export const TopLine = styled.div`
-  color: #01bf71;
+  color: #027BCE;
   font-size: 16px;
   line-height: 16px; //research
   font-weight: 700;

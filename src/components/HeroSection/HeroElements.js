@@ -4,8 +4,9 @@ import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 export const HeroContainer = styled.div`
 background: #0c0c0c; //super dark gray on red scale - almost black
 display: flex;
-justify-content: center; //research
+justify-content: left; //research //fix
 align-items: center;
+text-align: left; //fix
 padding: 0 30px;
 height: 800px;
 position: relative;
@@ -49,54 +50,66 @@ export const HeroContent = styled.div`
 z-index: 3; //research
 max-width: 1200px;
 position: absolute;
-padding: 8px 24px;
+padding: 8px 30px;
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: left;
+text-align: left;
+
+@media screen and (max-width: 768px) { //shrink on smaller screen
+    padding: 4px 12px;
+
+    }
+
+    @media screen and (max-width: 480px) { //shrink MORE on smallest screen
+        padding: 4px 8px;
+
+    }
+
 `;
 
 export const HeroH1 = styled.h1`
     color: #fff;
-    font-size: 48px;
+    font-size: 80px;
     font-weight: 600;
-    text-align: center;
+    /* text-align: left; */
 
     @media screen and (max-width: 768px) { //shrink on smaller screen
-        font-size: 40px;
+        font-size: 50px;
     }
 
     @media screen and (max-width: 480px) { //shrink MORE on smallest screen
-        font-size: 32px;
+        font-size: 35px;
     }
-
 
 `;
 
 export const HeroP = styled.p`
-margin-top: 12px;
+margin-top: 8px;
 color: #fff;
-font-weight: 200;
-font-size: 24px;
-text-align: center;
+font-weight: 400;
+font-size: 30px;
+text-align: left;
 max-width: 600px;
 
 
 @media screen and (max-width: 768px) { //shrink on smaller screen
-        font-size: 24px;
+        font-size: 25px;
     }
 
     @media screen and (max-width: 480px) { //shrink MORE on smallest screen
-        font-size: 18px;
+        font-size: 20px;
     }
 
 `;
 
+
+
 export const HeroBtnWrapper = styled.div`
-margin-top: 24px;
+margin-top: 32px;
 display: flex;
-flex-direction: column;
-align-items: center;
-font-weight: 600;
+align-items: left;
+font-weight: 400;
 
 `;
 

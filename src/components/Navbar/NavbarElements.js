@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -36,7 +37,7 @@ export const NavLogo = styled(LinkS)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 5px;
   font-weight: bold;
   text-decoration: none;
 `;
@@ -74,6 +75,7 @@ export const NavItem = styled.li`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  margin: 0 15px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -90,16 +92,16 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #027BCE;
   }
 `;
 
 
 export const NavBtnLink = styled(LinkR)` //important currently just the "sign in" button top right - teal round
-  border-radius: 50px; //rounded corner on button
-  background: #01bf71;
+  border-radius: 5%; //rounded corner on button
+  background: #027BCE;
   white-space: nowrap;
-  padding: 10px 22px; //TOP / RIGHT / BOTTOM / LEFT
+  padding: 10px 14px; //TOP / RIGHT / BOTTOM / LEFT
   color: #010606; //super dark robins egg blue, basically black
   font-size: 16px;
   font-weight: 600;
@@ -115,8 +117,6 @@ export const NavBtnLink = styled(LinkR)` //important currently just the "sign in
     color: #010606; // super dark robins egg blue basically black
   }
 `;
-
-
 
 
 
@@ -223,14 +223,14 @@ export const NavBtnLink = styled(LinkR)` //important currently just the "sign in
 //   cursor: pointer;
 
 //   &.active {
-//     border-bottom: 3px solid #01bf71;
+//     border-bottom: 3px solid #027BCE;
 //   }
 // `;
 
 
 // export const NavBtnLink = styled(LinkR)` //important currently just the "sign in" button top right - teal round
 //   border-radius: 50px; //rounded corner on button
-//   background: #01bf71;
+//   background: #027BCE;
 //   white-space: nowrap;
 //   padding: 10px 22px; //TOP / RIGHT / BOTTOM / LEFT
 //   color: #010606; //super dark robins egg blue, basically black

@@ -5,6 +5,7 @@ import styled from "styled-components";
 export const AboutMeContainer = styled.div`
 color: #fff;
 background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')}; //first is white on a red scale
+padding: 50px 0;
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -54,16 +55,25 @@ export const TextWrapper = styled.div`
 max-width: 540px;
 padding-top: 0;
 padding-bottom: 60px;
+text-align: right;
+
+@media screen and (max-width: 768px) {
+  text-align: center;    
+  }
 `;
 
 export const TopLine = styled.div`
-  color: #01bf71;
+  color: #027BCE;
   font-size: 16px;
   line-height: 16px; //research
   font-weight: 700;
   letter-spacing: 1.4px; //research
   text-transform: uppercase; //research
   margin-bottom: 16px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 50px;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -74,17 +84,27 @@ font-weight: 600;
 color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
 
 
+@media screen and (max-width: 768px) {
+    margin-right: 50px;
+  }
+
 @media screen and (max-width: 480px) {
     font-size: 32px;
+    
   }
 `;
 
 export const Subtitle = styled.p`
-max-width: 440px; //research
+/* max-width: 440px; //research */
 margin-bottom: 35px;
-font-size: 18px;
+font-size: 20px;
 line-height: 24px;
 color: ${({ darkText }) => (darkText ? '#010606' : '#f7f8fa')};
+
+@media screen and (max-width: 768px) {
+    font-size: 18px;
+    margin-right: 50px;
+  }
 
 `;
 
@@ -94,7 +114,7 @@ justify-content: flex-start; //research
 `;
 
 export const ImgWrap = styled.div`
-max-width: 555px;
+max-width: 500px;
 height: 100%;
 `;
 
@@ -103,6 +123,6 @@ export const Img = styled.img`
   width: 100%;
   margin-top: 0;
   margin-right: 0;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   padding-right: 0;
 `;

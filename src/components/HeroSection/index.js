@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Video from "../../videos/hero-bg-blur-type.mp4";
 import { Button } from "../ButtonElement";
+import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+
+import './HeroSection.css';
+
 import {
   HeroContainer,
   HeroBg,
@@ -17,8 +21,13 @@ const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
-    setHover(!hover); //fix is this the button? Maybe destroy...
+    setHover(!hover); 
   };
+
+  // const handleType = (count: number) => {
+  //   console.log(count)
+  // }
+
 
   return (
     <>
@@ -29,7 +38,19 @@ const HeroSection = () => {
         <HeroContent>
           <HeroH1>My Name Is Mo</HeroH1>
           <HeroP>
-            I love: <u>TO MAKE THIS A TYPE AREA</u>
+            and I love: {" "} 
+          
+          <Typewriter 
+          words={['technology', 'web design', 'software development', 'React', 'JavaScript', 'CSS']}
+          loop={false}
+          cursor
+          cursorStyle='_'
+          typeSpeed={90}
+          deleteSpeed={60}
+          delaySpeed={1000}
+          // onType={handleType}
+          />
+
           </HeroP>
           <HeroBtnWrapper>
             <Button
@@ -44,7 +65,7 @@ const HeroSection = () => {
               exact="true"
               offset={-80}
             >
-              More About Me {hover ? <ArrowForward /> : <ArrowRight />}
+              About Me {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

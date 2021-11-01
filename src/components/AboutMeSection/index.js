@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement";
-import BeefPants from '../../images/reactIcon.png';
+import BeefPants from '../../images/old-git-pic.png';
 
 
 import {
