@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "../ButtonElement";
+import BeefPants from '../../images/reactIcon.png';
+
 
 import {
   TechnologiesContainer,
@@ -17,18 +19,18 @@ import {
 } from "./TechnologiesElements.js";
 
 const TechnologiesSection = ({
-  lightBg,
-  id,
+   lightBg,
   imgStart,
   topLine,
   lightText,
   headline,
-  darkText,
   description,
   buttonLabel,
-  img,
+  img, //fix
   alt,
+  id,
   primary,
+  darkText,
   dark,
   dark2
 }) => {
@@ -52,13 +54,15 @@ const TechnologiesSection = ({
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                   dark2={dark2 ? 1 : 0}
-                  >{buttonLabel}</Button>
+                  >
+                    {buttonLabel}
+                    </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2560px-React-icon.svg.png' alt={alt}/>
+                <Img src={BeefPants} alt={alt}/>
               </ImgWrap>
             </Column2>
           </TechnologiesRow>

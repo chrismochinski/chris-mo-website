@@ -1,42 +1,42 @@
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Technologies',
-    headline: 'The following headline Big',
+  lightText: true,
+  lightTextDesc: true,
+    topLine: 'About Me',
+    headline: 'I mm pretty good I guess',
     description: 'Here is a long description which maybe we will just go ahead and change to something awesome cuz this is dumb',
     buttonLabel: 'Get started',
     imgStart: false, //important flip column - img first or second
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
     dark: true,
-    primary: true,
-    darkText: false
+  primary: true,
+  darkText: false
 }
 
 export const homeObjTwo = {
-    id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    id: 'technologies',
+    lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
     topLine: 'Technologies',
-    headline: 'The following headline Big',
-    description: 'Here is a long description which maybe we will just go ahead and change to something awesome cuz this is dumb',
+    headline: 'This Will Go Away ',
+    description: 'This is gonna be a list of technologies',
     buttonLabel: 'Get started',
-    imgStart: false, //important flip column - img first or second
+    imgStart: true, //important flip column - img first or second
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 }
 
 export const homeObjThree = {
-    id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    id: 'my-work',
+    lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
     topLine: 'Technologies',
     headline: 'The following headline Big',
     description: 'Here is a long description which maybe we will just go ahead and change to something awesome cuz this is dumb',
@@ -44,9 +44,9 @@ export const homeObjThree = {
     imgStart: false, //important flip column - img first or second
     // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
     alt: 'TechnoloJEEZ',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+  primary: false,
+  darkText: true
 }
 
 

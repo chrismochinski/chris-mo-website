@@ -2,10 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import HeroSection from '../components/HeroSection';
+import MyWork from '../components/MyWork';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import TechnologiesSection from '../components/TechnologiesSection';
 import { homeObjOne } from '../components/TechnologiesSection/Data';
+import { homeObjTwo } from '../components/TechnologiesSection/Data';
 
 const Home = () => {
 
@@ -22,6 +24,8 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <HeroSection />
             <TechnologiesSection {...homeObjOne}/>
+            <TechnologiesSection {...homeObjTwo} />
+            <MyWork />
         </Router>
     )
 };
