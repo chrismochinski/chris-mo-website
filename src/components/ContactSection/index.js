@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 import "./ContactSection.css";
 
+import photo from '../../images/phonePhoto.jpg'
+
+
 import {
   FaGithub,
   FaLinkedin,
@@ -42,6 +45,8 @@ const Contact = ({
   return (
     <>
       <ContactContainer lightBg={lightBg} id={"contact"}>
+
+    
         <ContactWrapper>
           <TextWrapper>
             <TopLine>{topLine}</TopLine>

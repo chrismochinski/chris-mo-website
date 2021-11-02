@@ -74,7 +74,7 @@ export const MyWorkIcon = styled.img`
 `;
 
 export const MyWorkH1 = styled.h1`
-font-family: 'Bitter', serif; //fix ??
+/* font-family: 'Bitter', serif; //fix ?? */
 
  font-size: 2.8rem;
   color: #fff;

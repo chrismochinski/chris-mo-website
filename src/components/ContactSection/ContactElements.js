@@ -1,12 +1,37 @@
 import styled from "styled-components";
+import photo from '../../images/phonePhoto.jpg'
 
 export const ContactContainer = styled.div`
-  background: #f9f9f9;
+
+/* background-image: url("../images/phonePhoto.jpg"); //fix */
+
+  /* background: #f9f9f9; */
   padding: 50px 0;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
+`;
+
+export const ContactBg = styled.div`
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+
+`;
+
+export const PBg = styled.video`
+width: 100%;
+height: 100%;
+-o-object-fit: cover; //research
+object-fit: cover;
+background: #232a34; //very dk gray with hint of blue 
+
 `;
 
 export const ContactWrapper = styled.div`
@@ -73,7 +98,6 @@ export const TopLine = styled.div`
 `;
 
 export const Heading = styled.h1`
-font-family: 'Bitter', serif; //fix ??
 
   margin-bottom: 8px;
   font-size: 54px;

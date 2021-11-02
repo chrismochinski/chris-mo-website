@@ -71,10 +71,9 @@ text-align: left;
 `;
 
 export const HeroH1 = styled.h1`
-font-family: 'Bitter', serif; //fix ??
     color: #fff;
     font-size: 80px;
-    font-weight: 500;
+    font-weight: 600;
     /* text-align: left; */
 
     @media screen and (max-width: 768px) { //shrink on smaller screen

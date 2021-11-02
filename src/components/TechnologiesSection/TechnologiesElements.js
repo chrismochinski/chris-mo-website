@@ -75,7 +75,7 @@ export const TopLine = styled.div`
 `;
 
 export const Heading = styled.h1`
-font-family: 'Bitter', serif; //fix ??
+/* font-family: 'Bitter', serif; //fix ?? */
 
 margin-bottom: 0;
 font-size: 46px;
