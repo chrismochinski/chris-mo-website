@@ -15,6 +15,8 @@ import {
 } from "./NavbarElements";
 import './Navbar.css';
 
+import resume from '../../images/MochinskiResume.pdf'
+
 
  
 
@@ -61,7 +63,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-50}
                 >
                   About Me
                 </NavLinks>
@@ -74,7 +76,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-50}
                 >
                   Technologies
                 </NavLinks>
@@ -87,7 +89,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-50}
                 >
                   My Work
                 </NavLinks>
@@ -100,14 +102,16 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-50}
                 >
                   Contact
                 </NavLinks>
               </NavItem>
+              <a href={resume} download>
               <NavBtn>
-                <NavBtnLink to="/resume">My Resume</NavBtnLink>
+                <NavBtnLink>My Resume</NavBtnLink>
               </NavBtn>
+              </a>
             </NavMenu>
           </NavbarContainer>
         </Nav>

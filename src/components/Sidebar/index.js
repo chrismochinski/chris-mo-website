@@ -10,6 +10,8 @@ import {
   SidebarRoute,
 } from "./SidebarElements.js";
 
+import resume from "../../images/MochinskiResume.pdf";
+
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -19,13 +21,23 @@ const Sidebar = ({ isOpen, toggle }) => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about-me" onClick={toggle}>About</SidebarLink>
-          <SidebarLink to="technologies" onClick={toggle}>Technologies</SidebarLink>
-          <SidebarLink to="my-work" onClick={toggle}>My Work</SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
+          <SidebarLink to="about-me" onClick={toggle}>
+            About
+          </SidebarLink>
+          <SidebarLink to="technologies" onClick={toggle}>
+            Technologies
+          </SidebarLink>
+          <SidebarLink to="my-work" onClick={toggle}>
+            My Work
+          </SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>
+            Contact
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/resume">My Resume</SidebarRoute>
+          <a href={resume} download>
+            <SidebarRoute>My Resume</SidebarRoute>
+          </a>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

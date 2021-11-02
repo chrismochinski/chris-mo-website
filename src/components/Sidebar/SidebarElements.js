@@ -71,7 +71,7 @@ display: flex;
 justify-content: center;
 `;
 
-export const SidebarRoute = styled(LinkR)` //react router link
+export const SidebarRoute = styled.a` //react router link
 border-radius: 10px;
 background: #309DE7; //same teal green
 white-space: nowrap; //https://developer.mozilla.org/en-US/docs/Web/CSS/white-space

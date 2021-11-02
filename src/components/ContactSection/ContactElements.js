@@ -73,6 +73,8 @@ export const TopLine = styled.div`
 `;
 
 export const Heading = styled.h1`
+font-family: 'Bitter', serif; //fix ??
+
   margin-bottom: 8px;
   font-size: 54px;
   line-height: 1.1;

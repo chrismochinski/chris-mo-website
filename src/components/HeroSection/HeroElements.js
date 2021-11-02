@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
+import { FaRegArrowAltCircleDown, FaArrowAltCircleDown } from 'react-icons/fa';
 
 export const HeroContainer = styled.div`
 background: #0c0c0c; //super dark gray on red scale - almost black
@@ -9,7 +10,7 @@ align-items: center;
 text-align: left; //fix
 padding: 0 30px;
 height: 800px;
-/* position: relative; */ //important ???? Removing fits the vid better
+/* position: relative; //removing fits vid better */
 
 z-index: 1; //research
 
@@ -20,7 +21,7 @@ z-index: 1; //research
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), 
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),  //changed last from .6 - consider
     linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
     z-index: 2; //higher = darker
 }
@@ -70,9 +71,10 @@ text-align: left;
 `;
 
 export const HeroH1 = styled.h1`
+font-family: 'Bitter', serif; //fix ??
     color: #fff;
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 500;
     /* text-align: left; */
 
     @media screen and (max-width: 768px) { //shrink on smaller screen
@@ -116,15 +118,17 @@ font-weight: 400;
 
 `;
 
-export const ArrowForward = styled(MdArrowForward)`
+export const ArrowForward = styled(FaArrowAltCircleDown)`
 margin-left: 8px;
 font-size: 20px;
 
 `;
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
+export const ArrowRight = styled(FaRegArrowAltCircleDown)`
 margin-left: 8px;
 font-size: 20px;
 
 `;
 
+
+// FaRegArrowAltCircleDown, FaArrowAltCircleDown 

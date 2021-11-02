@@ -64,12 +64,25 @@ color: #fff;
 export const FooterLink = styled(LinkS)`
 color: #fff;
 text-decoration: none;
-margin-bottom: 0.5rem;
+margin-bottom: 9px;
 font-size: 18px;
 cursor: pointer;
 
 &:hover {
-    color: #309DE7;
+    color: #29FFB9;
+    transition: 0.3s ease-out; //research
+}
+`;
+
+export const ResumeLink = styled.a`
+color: #fff;
+text-decoration: none;
+margin-bottom: 9px;
+font-size: 18px;
+cursor: pointer;
+
+&:hover {
+    color: #29FFB9;
     transition: 0.3s ease-out; //research
 }
 `;

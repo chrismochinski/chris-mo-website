@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Video from "../../videos/hero-bg-blur-type.mp4";
+import Video from "../../videos/world.mp4";
 import { Button } from "../ButtonElement";
 import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
           <VideoBg autoPlay loop muted type="video/mp4" src={Video} />
         </HeroBg>
         <HeroContent>
-          <HeroH1>My Name Is Mo,</HeroH1>
+          <HeroH1>My Name is Mo,</HeroH1>
           <HeroP>
             and I love: {" "} 
           

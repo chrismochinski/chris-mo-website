@@ -21,6 +21,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
+
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -31,7 +32,8 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkS)`
-  color: #309DE7; //important 
+
+  color: #29FFB9; //important 
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -109,7 +111,7 @@ export const NavLinks = styled(LinkS)`
 `;
 
 
-export const NavBtnLink = styled(LinkR)` //important currently just the "sign in" button top right - teal round
+export const NavBtnLink = styled.a` //download resume link top right
   border-radius: 10px; //rounded corner on button
   background: #309DE7;
   white-space: nowrap;

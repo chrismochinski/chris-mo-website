@@ -1,6 +1,7 @@
 import React from "react";
-import { animateScroll as scroll, Link } from 'react-scroll';
+import { animateScroll as scroll, Link } from "react-scroll";
 
+import './Footer.css'
 
 import {
   FooterContainer,
@@ -10,10 +11,13 @@ import {
   FooterLinkItems,
   FooterLinkTitle,
   FooterLink,
+  ResumeLink,
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights,
 } from "./FooterElements";
+
+import resume from "../../images/MochinskiResume.pdf";
 
 const Footer = () => {
   return (
@@ -24,6 +28,17 @@ const Footer = () => {
 
           <FooterLinksWrapper>
             <FooterLinkItems>
+
+            <FooterLink className="top"
+                to="home"
+                smooth={true}
+                duration={500}
+                exact="true"
+                offset={-80}
+              >
+                Top
+              </FooterLink>
+
               <FooterLink
                 to="about-me"
                 smooth={true}
@@ -42,7 +57,14 @@ const Footer = () => {
               >
                 Technologies
               </FooterLink>
-              <FooterLink
+              
+            </FooterLinkItems>
+          </FooterLinksWrapper>
+
+          <FooterLinksWrapper>
+            <FooterLinkItems>
+
+            <FooterLink
                 to="my-work"
                 smooth={true}
                 duration={500}
@@ -51,11 +73,8 @@ const Footer = () => {
               >
                 My Work
               </FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
 
-          <FooterLinksWrapper>
-            <FooterLinkItems>
+
               <FooterLink
                 to="contact"
                 smooth={true}
@@ -65,24 +84,16 @@ const Footer = () => {
               >
                 Contact Me
               </FooterLink>
-              <FooterLink
-                to="resume"
-                smooth={true}
-                duration={500}
-                exact="true"
-                offset={-80}
-              >
-                My Resume
-              </FooterLink>
-              <FooterLink
-                to="home"
-                smooth={true}
-                duration={500}
-                exact="true"
-                offset={-80}
-              >
-                Top
-              </FooterLink>
+
+            
+              
+
+              <a href={resume} download>
+                <ResumeLink>
+                  My Resume
+                </ResumeLink>
+              </a>
+
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
