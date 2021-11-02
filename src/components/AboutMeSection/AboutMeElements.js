@@ -4,7 +4,7 @@ export const AboutMeContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) =>
     lightBg ? "#f9f9f9" : "#010606"}; //first is white on a red scale
-  /* padding: 50px 0; */
+  padding: 50px 0;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -12,10 +12,9 @@ export const AboutMeContainer = styled.div`
 `;
 
 export const AboutMeWrapper = styled.div`
-  //important //fix THIS WILL BECOME MY TECH SCROLLER ICONS!!!!
   display: grid;
   z-index: 1;
-  height: 700px;
+  height: 600px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -30,36 +29,41 @@ export const AboutMeWrapper = styled.div`
   }
 `;
 
-export const AboutMeRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr); //research
-  align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`}; //research
+// export const AboutMeRow = styled.div`
+//   display: grid;
+//   grid-auto-columns: minmax(auto, 1fr); //research
+//   align-items: center;
+//   grid-template-areas: ${({ imgStart }) =>
+//     imgStart ? `'col2 col1'` : `'col1 col2'`}; //research
 
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`}; //research
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     grid-template-areas: ${({ imgStart }) =>
+//       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`}; //research
+//   }
+// `;
 
 export const Column1 = styled.div`
-  /* margin-bottom: 15px; */
   padding: 0 15px;
   grid-area: col1;
 `;
 
-export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2;
-`;
+
+// export const Column1 = styled.div`
+//   padding: 0 15px;
+//   grid-area: col1;
+// `;
+
+// export const Column2 = styled.div`
+//   margin-bottom: 15px;
+//   padding: 0 15px;
+//   grid-area: col2;
+// `;
 
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
-  text-align: left;
+  text-align: center;
 
   @media screen and (max-width: 768px) {
     text-align: center;
@@ -68,7 +72,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.div`
   color: #309DE7;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 16px; //research
   font-weight: 700;
   letter-spacing: 1.4px; //research
@@ -109,14 +113,11 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start; //research
-`;
 
 export const ImgWrap = styled.div`
   max-width: 400px;
   height: 100%;
+  display: flex;
   justify-content: center;
 `;
 
@@ -126,4 +127,5 @@ export const Img = styled.img`
   margin-right: 0;
   margin-left: 0;
   padding-right: 0;
+  
 `;

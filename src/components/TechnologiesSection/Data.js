@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "About Me",
   headline: "I'll Keep it Short...",
   description:
-    "I live to solve puzzles, help people, be reliable, continuously learn and grow my knowledge and capabilities. I am in love with limbic friction and challenges fuel me.",
+    "My Name is Chris Mochinski. Most people call me Mo. I am a Full-Stack Software Engineer, technology freakazoid and human cartoon. It is my sincere believe that there are no problems - there are only puzzles.",
   buttonLabel: "Get started",
   imgStart: true,
   // img: require('../../images/reactIcon.png'), //important broken - just hardcode images
@@ -23,7 +23,7 @@ export const homeObjTwo = {
   lightTextDesc: true,
   topLine: "Technologies",
   headline: "I Make Stuff With:",
-  description: "(mouseover to pause)",
+  // description: "(mouseover to pause)",
   buttonLabel: "Get started",
   imgStart: false,
   // img: require('../../images/reactIcon.png'), //important broken - just hardcode images

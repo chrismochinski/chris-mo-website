@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 
-import './ContactSection.css';
+import "./ContactSection.css";
 
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaPaperPlane,
+  FaRedPaperPlane,
+} from "react-icons/fa";
 
 import {
   ContactContainer,
@@ -13,11 +19,11 @@ import {
   Subtitle,
   IconRow,
   Icon,
-  Button,
-  ArrowForward,
-  ArrowRight
+  EmailButton,
+  Airplane1,
+  Airplane2,
 } from "./ContactElements.js";
- 
+
 const Contact = ({
   lightBg,
   imgStart,
@@ -27,14 +33,11 @@ const Contact = ({
   description,
   darkText,
 }) => {
-
-
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
-    setHover(!hover); 
+    setHover(!hover);
   };
-
 
   return (
     <>
@@ -45,25 +48,31 @@ const Contact = ({
             <Heading lightText={lightText}>{headline}</Heading>
             <Subtitle darkText={darkText}>{description}</Subtitle>
             <IconRow darkText={darkText}>
-
               <Icon>
-                  <a href="https://github.com/chrismochinski" target="_blank">
-                <FaGithub />
+                <a href="https://github.com/chrismochinski" target="_blank">
+                  <FaGithub />
                 </a>
               </Icon>
               <Icon>
-              <a href="https://www.linkedin.com/in/chrismochinski/" target="_blank">
-                <FaLinkedin />
+                <a
+                  href="https://www.linkedin.com/in/chrismochinski/"
+                  target="_blank"
+                >
+                  <FaLinkedin />
                 </a>
               </Icon>
               <Icon>
-              <a href="https://twitter.com/holymosesmusic" target="_blank">
-                <FaTwitter />
+                <a href="https://twitter.com/holymosesmusic" target="_blank">
+                  <FaTwitter />
+                </a>
+              </Icon>
+              <Icon>
+                <a href="mailto:cmochinski@gmail.com" target="_blank">
+                  <FaPaperPlane />
                 </a>
               </Icon>
             </IconRow>
           </TextWrapper>
-          
         </ContactWrapper>
       </ContactContainer>
     </>

@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  color: #fff;
-  background: ${({ lightBg }) =>
-    lightBg ? "#f9f9f9" : "#010606"}; //first is white on a red scale
+  background: #f9f9f9;
   padding: 50px 0;
 
   @media screen and (max-width: 768px) {
@@ -15,10 +13,10 @@ export const ContactWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 350px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
+  /* width: 100%; */
+  /* max-width: 1100px; */
+  /* margin-right: auto;
+  margin-left: auto; */
   margin-top: 100px;
 
   padding: 0 24px;
@@ -29,12 +27,13 @@ export const ContactWrapper = styled.div`
     margin-left: 0;
     justify-content: center;
 
+}
 
     @media screen and (max-width: 480px) {
     margin-top: 35px;
     height: 280px;
 
-  }
+  
   }
 `;
 
@@ -70,11 +69,11 @@ export const TopLine = styled.div`
   font-weight: 700;
   letter-spacing: 1.4px; //research
   text-transform: uppercase; //research
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   font-size: 54px;
   line-height: 1.1;
   font-weight: 600;
@@ -103,14 +102,13 @@ export const Subtitle = styled.p`
 
 
 export const Icon = styled.a`
-font-size: 60px;
+font-size: 55px;
 margin: 0 8px;
 
-//fix
 display: inline-block;
   position: relative;
   color: #0087ca;
-  //fix
+ 
 
 &::after {
     content: '';
@@ -129,6 +127,16 @@ display: inline-block;
     transform: scaleX(1);
   transform-origin: center;
 }
+
+@media screen and (max-width: 768px) {
+    font-size: 55px;
+    /* margin-right: 50px; */
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 40px;
+    /* margin-right: 50px; */
+  }
 `;
 
 export const IconRow = styled.div`
@@ -138,3 +146,6 @@ export const IconRow = styled.div`
   margin-left: 0;
   padding-right: 0;
 `;
+
+
+
