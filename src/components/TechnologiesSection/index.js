@@ -79,8 +79,9 @@ const TechnologiesSection = ({
                 <Marquee
                   className="marquee"
                   gradientColor={[0, 6, 6]}
+                  gradientWidth={40}
                   pauseOnHover={true}
-                  speed={70}
+                  speed={90}
                 >
                   <PassportImage />
                   <HtmlImage />

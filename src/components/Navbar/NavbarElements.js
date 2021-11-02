@@ -15,8 +15,6 @@ export const Nav = styled.nav`
   z-index: 10;
   transition: 0.8s all ease;
 
-
-
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -33,7 +31,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkS)`
-  color: #09E623;
+  color: #309DE7; //important 
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -47,7 +45,7 @@ export const NavLogo = styled(LinkS)`
 
   &:hover {
     color: #fff;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
   }
 `;
@@ -92,6 +90,8 @@ export const NavBtn = styled.nav`
   }
 `;
 
+
+
 export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
@@ -101,8 +101,10 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
+  
   &.active {
     border-bottom: 3px solid #309DE7;
+    
   }
 `;
 
