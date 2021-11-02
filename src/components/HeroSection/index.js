@@ -33,7 +33,7 @@ const HeroSection = () => {
     <>
       <HeroContainer id="home">
         <HeroBg>
-          <VideoBg autoPlay loop muted type="video/mp4" src={Video} />
+          <VideoBg autoPlay loop muted playsinline type="video/mp4" src={Video} />
         </HeroBg>
         <HeroContent>
           <HeroH1>My Name is Mo,</HeroH1>

@@ -67,7 +67,6 @@ text-align: right;
 export const TopLine = styled.div`
   color: #309DE7;
   font-size: 20px;
-  /* line-height: 16px; //research */
   font-weight: 700;
   letter-spacing: 1.6px; //research
   text-transform: uppercase; //research
@@ -75,7 +74,6 @@ export const TopLine = styled.div`
 `;
 
 export const Heading = styled.h1`
-/* font-family: 'Bitter', serif; //fix ?? */
 
 margin-bottom: 0;
 font-size: 46px;

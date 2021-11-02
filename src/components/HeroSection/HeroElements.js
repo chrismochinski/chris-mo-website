@@ -9,7 +9,7 @@ justify-content: left; //research //fix
 align-items: center;
 text-align: left; //fix
 padding: 0 30px;
-height: 800px;
+height: 600px;
 /* position: relative; //removing fits vid better */
 
 z-index: 1; //research

@@ -19,13 +19,13 @@ export const AboutMeWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 90px;
+  margin-top: 140px;
 
   padding: 0 24px;
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 `;
 
@@ -85,7 +85,6 @@ export const TopLine = styled.div`
 `;
 
 export const Heading = styled.h1`
-/* font-family: 'Bitter', serif; //fix ?? */
 
   margin-bottom: 24px;
   font-size: 48px;
