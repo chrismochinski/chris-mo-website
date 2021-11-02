@@ -6,7 +6,7 @@ export const ContactContainer = styled.div`
 /* background-image: url("../images/phonePhoto.jpg"); //fix */
 
   /* background: #f9f9f9; */
-  padding: 50px 0;
+  padding: 100px 0;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

@@ -5,14 +5,13 @@ import { FaRegArrowAltCircleDown, FaArrowAltCircleDown } from 'react-icons/fa';
 export const HeroContainer = styled.div`
 background: #0c0c0c; //super dark gray on red scale - almost black
 display: flex;
-justify-content: left; //research //fix
+justify-content: left; 
 align-items: center;
-text-align: left; //fix
+text-align: left; 
 padding: 0 30px;
-height: 600px;
-/* position: relative; //removing fits vid better */
-
-z-index: 1; //research
+height: 800px;
+position: relative; //fix remove fits vid better
+z-index: 1; 
 
 :before {
     content: '';
@@ -55,26 +54,21 @@ position: absolute;
 padding: 8px 30px;
 display: flex;
 flex-direction: column;
-align-items: left;
 text-align: left;
 
 @media screen and (max-width: 768px) { //shrink on smaller screen
     padding: 4px 12px;
-
     }
 
     @media screen and (max-width: 480px) { //shrink MORE on smallest screen
         padding: 4px 8px;
-
     }
-
 `;
 
 export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 80px;
     font-weight: 600;
-    /* text-align: left; */
 
     @media screen and (max-width: 768px) { //shrink on smaller screen
         font-size: 50px;
