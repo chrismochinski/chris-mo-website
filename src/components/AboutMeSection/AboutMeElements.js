@@ -28,11 +28,10 @@ export const AboutMeWrapper = styled.div`
 
 export const AboutMeRow = styled.div`
   display: grid;
-  grid-auto-columns: minmax(auto, 1fr); //research
   align-items: center;
 `;
 
-export const Column1 = styled.div`
+export const Column = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
 `;
@@ -42,15 +41,15 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
   text-align: center;
-`;
+`; 
 
 export const TopLine = styled.div`
   color: #309de7;
   font-size: 20px;
-  line-height: 16px; //research
+  line-height: 16px; 
   font-weight: 700;
-  letter-spacing: 1.4px; //research
-  text-transform: uppercase; //research
+  letter-spacing: 1.4px; 
+  text-transform: uppercase; 
   margin-bottom: 12px;
 `;
 
@@ -67,7 +66,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  /* max-width: 440px; //research */
   margin-bottom: 35px;
   font-size: 20px;
   line-height: 24px;
@@ -75,21 +73,7 @@ export const Subtitle = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    /* margin-right: 50px; */
   }
 `;
 
-export const ImgWrap = styled.div`
-  max-width: 400px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-`;
 
-export const Img = styled.img`
-  width: 100%;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
-`;
