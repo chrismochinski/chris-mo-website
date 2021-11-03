@@ -14,13 +14,13 @@ export const MyWorkContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 1350px;
   }
 `;
 
 export const MyWorkWrapper = styled.div`
 max-width: 1000px;
-  /* margin: 0 0; */
+margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -29,13 +29,13 @@ max-width: 1000px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; //fix */
   }
 `;
 
@@ -58,33 +58,33 @@ export const MyWorkCard = styled.div`
     cursor: pointer;
   }
 
-
+/* 
   @media screen and (max-width: 480px) {
-    max-width: 460px;
-  }
+    max-width: 480px;
+  } */
 `;
 
 export const MyWorkIcon = styled.img`
   height: 150px;
   margin-bottom: 15px;
 
-  @media screen and (max-width: 480px) {
+  /* @media screen and (max-width: 480px) {
       max-width: 300px;
-}
+} */
 `;
 
 export const MyWorkH1 = styled.h1`
 /* font-family: 'Bitter', serif; //fix ?? */
 
- font-size: 2.8rem;
+ font-size: 2.4rem;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   border-bottom: 4px solid #29FFB9;
   text-transform: uppercase; //research
   line-height: 42px;
 
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 `;
 

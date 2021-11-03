@@ -2,14 +2,17 @@ import styled from "styled-components";
 
 export const TechnologiesContainer = styled.div`
 color: #fff;
-background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')}; //first is white on a red scale
-
+background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+height: 800px;
 @media screen and (max-width: 768px) {
-    padding: 0 0;
+    padding: 100px 0;
+}
+@media screen and (max-width: 480px) {
+    padding: 100px 0;
 }
 `;
 
-export const TechnologiesWrapper = styled.div` //important //fix THIS WILL BECOME MY TECH SCROLLER ICONS!!!!
+export const TechnologiesWrapper = styled.div` 
   display: grid;
   z-index: 1;
   height: 600px;
@@ -21,7 +24,7 @@ export const TechnologiesWrapper = styled.div` //important //fix THIS WILL BECOM
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    height: 750px;
+    height: 600px;
 }
 `;
 

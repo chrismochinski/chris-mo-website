@@ -5,11 +5,16 @@ export const ContactContainer = styled.div`
 
 /* background-image: url("../images/phonePhoto.jpg"); //fix */
 
-  /* background: #f9f9f9; */
+  background: #f9f9f9;
   padding: 100px 0;
+  height: 580;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 500;
   }
 `;
 
@@ -25,14 +30,14 @@ overflow: hidden;
 
 `;
 
-export const PBg = styled.video`
-width: 100%;
-height: 100%;
--o-object-fit: cover; //research
-object-fit: cover;
-background: #232a34; //very dk gray with hint of blue 
+// export const PBg = styled.video`
+// width: 100%;
+// height: 100%;
+// -o-object-fit: cover; //research
+// object-fit: cover;
+// background: #232a34; //very dk gray with hint of blue 
 
-`;
+// `;
 
 export const ContactWrapper = styled.div`
   display: grid;

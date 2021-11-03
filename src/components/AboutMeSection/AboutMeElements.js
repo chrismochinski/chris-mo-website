@@ -7,6 +7,10 @@ export const AboutMeContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
+
+  @media screen and (max-width: 768px) {
+padding: 0 0;
+  }
 `;
 
 export const AboutMeWrapper = styled.div`  
@@ -28,32 +32,13 @@ export const AboutMeRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr); //research
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`}; //research
 
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`}; //research
-  }
 `;
 
 export const Column1 = styled.div`
 margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col1;
 `;
-
-
-// export const Column1 = styled.div`
-//   padding: 0 15px;
-//   grid-area: col1;
-// `;
-
-// export const Column2 = styled.div`
-//   margin-bottom: 15px;
-//   padding: 0 15px;
-//   grid-area: col2;
-// `;
 
 export const TextWrapper = styled.div`
   max-width: 540px;

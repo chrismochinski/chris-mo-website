@@ -9,7 +9,7 @@ justify-content: left;
 align-items: center;
 text-align: left; 
 padding: 0 30px;
-height: 800px;
+height: 880px;
 position: relative; //fix remove fits vid better
 z-index: 1; 
 
