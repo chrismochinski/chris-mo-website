@@ -17,9 +17,6 @@ import './Navbar.css';
 
 import resume from '../../images/MochinskiResume.pdf'
 
-
- 
-
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 

@@ -21,16 +21,48 @@ const Sidebar = ({ isOpen, toggle }) => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about-me" onClick={toggle}>
+          <SidebarLink 
+          to="about-me" 
+          onClick={toggle}
+          smooth={true}
+            duration={500}
+            spy={true}
+            exact='true' 
+            // offset={-80}
+            >
             About
           </SidebarLink>
-          <SidebarLink to="technologies" onClick={toggle}>
+          <SidebarLink 
+          to="technologies" 
+          onClick={toggle}
+          smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            // offset={-80}
+          >
             Technologies
           </SidebarLink>
-          <SidebarLink to="my-work" onClick={toggle}>
+          <SidebarLink 
+          to="my-work" 
+          onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            // offset={-80}
+          >
             My Work
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink 
+          to="contact" 
+          onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            // offset={-80}
+          >
             Contact
           </SidebarLink>
         </SidebarMenu>
