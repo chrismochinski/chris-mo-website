@@ -27,7 +27,7 @@ const AboutMeSection = ({
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>
-                My Name is Chris Mochinski. Most people call me Mo. I get very
+                My name is Chris Mochinski. Most people call me Mo. I get very
                 excited about turning ideas into neat things that people can use.
               </Subtitle>
             </TextWrapper>

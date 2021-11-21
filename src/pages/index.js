@@ -20,7 +20,6 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    console.log("Detected hamburger clickage...is it open?", isOpen);
     setIsOpen(!isOpen);
   };
 

@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import photo from '../../images/phonePhoto.jpg'
 
 export const ContactContainer = styled.div`
 
-/* background-image: url("../images/phonePhoto.jpg"); //fix */
 
   background: #f9f9f9;
   padding: 100px 0;
@@ -30,14 +28,7 @@ overflow: hidden;
 
 `;
 
-// export const PBg = styled.video`
-// width: 100%;
-// height: 100%;
-// -o-object-fit: cover; //research
-// object-fit: cover;
-// background: #232a34; //very dk gray with hint of blue 
 
-// `;
 
 export const ContactWrapper = styled.div`
   display: grid;
@@ -95,10 +86,10 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.div`
   color: #309DE7;
   font-size: 22px;
-  line-height: 16px; //research
+  line-height: 16px; 
   font-weight: 700;
-  letter-spacing: 1.4px; //research
-  text-transform: uppercase; //research
+  letter-spacing: 1.4px; 
+  text-transform: uppercase; 
   margin-bottom: 12px;
 `;
 

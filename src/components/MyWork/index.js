@@ -81,7 +81,7 @@ const MyWork = () => {
           <MyWorkCard>
             <MyWorkIcon src={Icon2} />
             <MyWorkH2>EU Tour Photo Gallery</MyWorkH2>
-            <MyWorkP>A full-stack photo gallery of my 2019/2020 Tour.</MyWorkP>
+            <MyWorkP>A full-stack photo gallery of my 2019/2020 European Tour.</MyWorkP>
 
             <MyWorkButtonWrapper>
               <a

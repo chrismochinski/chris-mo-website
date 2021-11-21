@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "About Me",
   headline: "I'll Keep it Short...",
   description:
-    "My Name is Chris Mochinski. Most people call me Mo. I get very excited about turning ideas into stuff that people can use.",
+    "My name is Chris Mochinski. Most people call me Mo. I get very excited about turning ideas into stuff that people can use.",
   buttonLabel: "Get started",
   imgStart: true,
   // img: require('../../images/reactIcon.png'), //important broken - just hardcode images

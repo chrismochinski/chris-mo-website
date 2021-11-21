@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Video from "../../videos/world.mp4";
 import { Button } from "../ButtonElement";
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 
-import './HeroSection.css'
+import "./HeroSection.css";
 
 import {
   HeroContainer,
@@ -21,37 +21,52 @@ const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
-    setHover(!hover); 
+    setHover(!hover);
   };
 
   // const handleType = (count: number) => {
   //   console.log(count)
   // }
 
-
   return (
     <>
       <HeroContainer id="home">
         <HeroBg>
-          <VideoBg autoPlay loop muted playsinline type="video/mp4" src={Video} />
+          <VideoBg
+            autoPlay
+            loop
+            muted
+            playsinline
+            type="video/mp4"
+            src={Video}
+          />
         </HeroBg>
         <HeroContent>
           <HeroH1>My Name is Mo,</HeroH1>
           <HeroP>
-            and I love: {" "} 
-          
-          <Typewriter className='typing'
-         
-          words={['technology', 'web design', 'React', 'JavaScript', 'rock & roll', 'mobile development', 'puzzles', 'full-stack development', 'coffee']}
-          loop={false}
-          cursor
-          cursorStyle='_'
-          typeSpeed={90}
-          deleteSpeed={60}
-          delaySpeed={1000}
-          // onType={handleType}
-          />
+            and I love:{" "}
+            <Typewriter
+              className="typing"
+              words={[
+                " technology",
+                " puzzles",
+                " React",
+                " JavaScript",
+                " rock & roll",
+                " web design",
+                " CSS",
+                " coffee",
+                " React Native",
 
+              ]}
+              loop={false}
+              cursor
+              cursorStyle="_"
+              typeSpeed={90}
+              deleteSpeed={60}
+              delaySpeed={1000}
+              // onType={handleType}
+            />
           </HeroP>
           <HeroBtnWrapper>
             <Button
