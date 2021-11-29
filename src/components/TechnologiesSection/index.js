@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../ButtonElement";
 import Marquee from "react-fast-marquee";
 import "./TechnologiesSection.css";
 import ReactImage from "../TechImages/ReactImage";
@@ -26,9 +25,7 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   ImgWrap,
-  Img,
 } from "./TechnologiesElements.js";
 
 const TechnologiesSection = ({
@@ -57,20 +54,6 @@ const TechnologiesSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                {/* <BtnWrap>
-                  <Button to="my-work"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                  primary={primary ? 1 : 0}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2 ? 1 : 0}
-                  >
-                    My Work
-                    </Button>
-                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>
