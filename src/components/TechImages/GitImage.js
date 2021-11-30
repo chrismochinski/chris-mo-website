@@ -5,7 +5,7 @@ import gitLogo from '../../images/gitLogo.png';
 const GitImage = () => {
     return (
         <>
-            <img src={gitLogo} width="160px" style={{margin: "0 10px"}} />
+            <img src={gitLogo} alt="Git" width="160px" style={{margin: "0 10px"}} />
 
         </>
     )

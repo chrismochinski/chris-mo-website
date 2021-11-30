@@ -5,7 +5,7 @@ import node from '../../images/nodeLogo.png';
 const NodeImage = () => {
     return (
         <>
-            <img src={node} width="160px" style={{margin: "0 10px"}} />
+            <img src={node} alt="Node" width="160px" style={{margin: "0 10px"}} />
 
         </>
     )

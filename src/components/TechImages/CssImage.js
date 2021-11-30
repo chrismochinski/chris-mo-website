@@ -5,7 +5,7 @@ import cssLogo from '../../images/cssLogo.png';
 const CssImage = () => {
     return (
         <>
-            <img src={cssLogo} width="160px" style={{margin: "0 10px"}} />
+            <img src={cssLogo} alt="CSS" width="160px" style={{margin: "0 10px"}} />
 
         </>
     )

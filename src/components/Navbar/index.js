@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import useSound from "use-sound";
-import { animateScroll as scroll, Link } from "react-scroll";
 import { FaBars } from "react-icons/fa"; //always first two letter of the icon
 import { MdVolumeUp, MdVolumeOff } from "react-icons/md";
 import { IconContext } from "react-icons/lib"; //quick icon color changes
@@ -20,7 +19,6 @@ import {
 import "./Navbar.css";
 import { useDispatch } from 'react-redux'; 
 
-import highWhoosh from "../../sounds/medBladeWhoosh.wav";
 import lowWhoosh from "../../sounds/deepBladeSwing.wav";
 import snaps from "../../sounds/snaps.wav";
 import tap from "../../sounds/tap.wav";

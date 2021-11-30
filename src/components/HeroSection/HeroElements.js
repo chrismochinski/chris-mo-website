@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { FaRegArrowAltCircleDown, FaArrowAltCircleDown } from 'react-icons/fa';
 
 export const HeroContainer = styled.div`

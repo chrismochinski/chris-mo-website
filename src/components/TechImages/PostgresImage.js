@@ -5,7 +5,7 @@ import PostgresLogo from '../../images/PostgresLogo.png';
 const PostgresImage = () => {
     return (
         <>
-            <img src={PostgresLogo} width="160px" style={{margin: "0 10px"}} />
+            <img src={PostgresLogo} alt="PostgreSQL" width="160px" style={{margin: "0 10px"}} />
 
         </>
     )

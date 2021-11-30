@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Video from "../../videos/world.mp4";
 import { Button } from "../ButtonElement";
-import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 
 import "./HeroSection.css";
 
@@ -24,10 +24,6 @@ const HeroSection = () => {
     setHover(!hover);
   };
 
-  // const handleType = (count: number) => {
-  //   console.log(count)
-  // }
-
   return (
     <>
       <HeroContainer id="home">
@@ -36,7 +32,6 @@ const HeroSection = () => {
             autoPlay
             loop
             muted
-            playsinline
             type="video/mp4"
             src={Video}
           />
@@ -75,7 +70,6 @@ const HeroSection = () => {
               onMouseLeave={onHover}
               primary="true"
               dark="true"
-              to="about-me"
               smooth={true}
               duration={500}
               exact="true"

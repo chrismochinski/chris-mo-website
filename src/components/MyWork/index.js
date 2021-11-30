@@ -1,15 +1,12 @@
 import React from "react";
-import { useHistory } from "react-router";
 import {
   MyWorkContainer,
   MyWorkH1,
-  MyWorkSubtitle,
   MyWorkWrapper,
   MyWorkCard,
   MyWorkIcon,
   MyWorkH2,
   MyWorkP,
-  BtnWrap,
   MyWorkButtonWrapper,
   MyWorkTryItButton,
   MyWorkGitHubButton,
@@ -20,8 +17,6 @@ import Icon3 from "../../gifs/magicBeans2.gif";
 import "./MyWorkStyle.css";
 
 const MyWork = () => {
-  const history = useHistory();
-
   return (
     <>
       <MyWorkContainer id="my-work">
@@ -31,7 +26,11 @@ const MyWork = () => {
         </MyWorkSubtitle> */}
         <MyWorkWrapper>
           <MyWorkCard>
-            <a href="https://youtu.be/_slC4RNX-d8" target="_blank">
+            <a
+              href="https://youtu.be/_slC4RNX-d8"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <MyWorkIcon src={Icon3} />
             </a>
 
@@ -42,13 +41,18 @@ const MyWork = () => {
             </MyWorkP>
 
             <MyWorkButtonWrapper>
-              <a href="http://magicbeanscrypto.com" target="_blank">
+              <a
+                href="http://magicbeanscrypto.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <MyWorkTryItButton>Try</MyWorkTryItButton>
               </a>
 
               <a
                 href="https://github.com/chrismochinski/magic-beans"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <MyWorkGitHubButton>GitHub</MyWorkGitHubButton>
               </a>
@@ -66,12 +70,14 @@ const MyWork = () => {
               <a
                 href="https://mo-made-a-to-do-list-app.herokuapp.com/"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <MyWorkTryItButton>Try</MyWorkTryItButton>
               </a>
               <a
                 href="https://github.com/chrismochinski/weekend-sql-to-do-list"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <MyWorkGitHubButton>GitHub</MyWorkGitHubButton>
               </a>
@@ -81,12 +87,15 @@ const MyWork = () => {
           <MyWorkCard>
             <MyWorkIcon src={Icon2} />
             <MyWorkH2>EU Tour Photo Gallery</MyWorkH2>
-            <MyWorkP>A full-stack photo gallery of my 2019/2020 European Tour.</MyWorkP>
+            <MyWorkP>
+              A full-stack photo gallery of my 2019/2020 European Tour.
+            </MyWorkP>
 
             <MyWorkButtonWrapper>
               <a
                 href="https://mo-made-a-gallery-app.herokuapp.com/"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <MyWorkTryItButton>Try</MyWorkTryItButton>
               </a>
@@ -94,6 +103,7 @@ const MyWork = () => {
               <a
                 href="https://github.com/chrismochinski/weekend-react-gallery"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <MyWorkGitHubButton>GitHub</MyWorkGitHubButton>
               </a>

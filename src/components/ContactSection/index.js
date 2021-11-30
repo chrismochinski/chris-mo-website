@@ -1,17 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./ContactSection.css";
 
-import photo from '../../images/phonePhoto.jpg'
-
-
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaPaperPlane,
-  FaRedPaperPlane,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from "react-icons/fa";
 
 import {
   ContactContainer,
@@ -22,9 +13,6 @@ import {
   Subtitle,
   IconRow,
   Icon,
-  EmailButton,
-  Airplane1,
-  Airplane2,
 } from "./ContactElements.js";
 
 const Contact = ({
@@ -36,17 +24,9 @@ const Contact = ({
   description,
   darkText,
 }) => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
-
   return (
     <>
       <ContactContainer lightBg={lightBg} id={"contact"}>
-
-    
         <ContactWrapper>
           <TextWrapper>
             <TopLine>{topLine}</TopLine>
@@ -54,25 +34,27 @@ const Contact = ({
             <Subtitle darkText={darkText}>{description}</Subtitle>
             <IconRow darkText={darkText}>
               <Icon>
-                <a href="https://github.com/chrismochinski" target="_blank">
+                <a href="https://github.com/chrismochinski" target="_blank"
+                rel="noreferrer noopener">
                   <FaGithub />
                 </a>
               </Icon>
               <Icon>
                 <a
                   href="https://www.linkedin.com/in/chrismochinski/"
-                  target="_blank"
+                  target="_blank" 
+                  rel="noreferrer noopener"
                 >
                   <FaLinkedin />
                 </a>
               </Icon>
               <Icon>
-                <a href="https://twitter.com/holymosesmusic" target="_blank">
+                <a href="https://twitter.com/holymosesmusic" target="_blank" rel="noreferrer noopener">
                   <FaTwitter />
                 </a>
               </Icon>
               <Icon>
-                <a href="mailto:cmochinski@gmail.com" target="_blank">
+                <a href="mailto:cmochinski@gmail.com">
                   <FaPaperPlane />
                 </a>
               </Icon>
