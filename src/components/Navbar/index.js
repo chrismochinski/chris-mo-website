@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import useSound from "use-sound";
 import { animateScroll as scroll, Link } from "react-scroll";
 import { FaBars } from "react-icons/fa"; //always first two letter of the icon
+import { MdVolumeUp, MdVolumeOff } from "react-icons/md";
 import { IconContext } from "react-icons/lib"; //quick icon color changes
 import {
   Nav,
@@ -12,13 +14,25 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  VolumeButton,
+  LeftContainer
 } from "./NavbarElements";
-import './Navbar.css';
+import "./Navbar.css";
+import { useDispatch } from 'react-redux'; 
 
-import resume from '../../images/MochinskiResume.pdf'
+import highWhoosh from "../../sounds/medBladeWhoosh.wav";
+import lowWhoosh from "../../sounds/deepBladeSwing.wav";
+import snaps from "../../sounds/snaps.wav";
+import tap from "../../sounds/tap.wav";
+import cards from "../../sounds/cards.wav";
+
+
+import resume from "../../images/MochinskiResume.pdf";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [sound, setSound] = useState(false); //true = muted, false = on (default state on)
+  const dispatch = useDispatch();
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -32,14 +46,49 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", changeNav);
   }, []);
 
+  const changeSound = () => {
+    console.log('sound changed to:', sound)
+    if(sound){
+      setSound(false)
+
+    }else if(!sound){
+      setSound(true)
+      play()
+    }
+    dispatchToRedux(); //call dispatch function for sound setting (right below)
+  }
+
+  const dispatchToRedux = () => {
+    const action = { type: "SOUND_SETTING", payload: sound};
+    dispatch(action);
+  }
+
+
+  const [play] = useSound(snaps, {volume: 0.3}) //turn sound on
+  const [playOn] = useSound(tap, {volume: 0.3}); //play mousedown tap
+  const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
+  const [playActive] = useSound(cards, { volume: 0.4 }); //play cards
+
+  const doNothing = () => {}; //do nothing
 
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
+
+            <LeftContainer>
+          <VolumeButton onClick={changeSound}>
+              {sound ? <MdVolumeUp /> : <MdVolumeOff />}
+            </VolumeButton>
             <NavLogo
               to="home"
+              onMouseDown={() => {
+                sound ? playOn() : doNothing();
+              }}
+              onMouseUp={() => {
+                sound ? playOff() : doNothing();
+              }}
               smooth={true}
               duration={500}
               spy={true}
@@ -48,13 +97,31 @@ const Navbar = ({ toggle }) => {
             >
               Chris Mochinski
             </NavLogo>
-            <MobileIcon onClick={toggle}>
+            </LeftContainer>
+            
+
+            <MobileIcon 
+            onClick={toggle}
+            onMouseDown={() => {
+              sound ? playOn() : doNothing();
+            }}
+            onMouseUp={() => {
+              sound ? playActive() : doNothing();
+            }}
+            
+            >
               <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
                 <NavLinks
                   className="nav-link"
+                  onMouseDown={() => {
+                    sound ? playOn() : doNothing();
+                  }}
+                  onMouseUp={() => {
+                    sound ? playOff() : doNothing();
+                  }}
                   to="about-me"
                   smooth={true}
                   duration={500}
@@ -68,6 +135,12 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks
                   className="nav-link"
+                  onMouseDown={() => {
+                    sound ? playOn() : doNothing();
+                  }}
+                  onMouseUp={() => {
+                    sound ? playOff() : doNothing();
+                  }}
                   to="technologies"
                   smooth={true}
                   duration={500}
@@ -81,6 +154,12 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks
                   className="nav-link"
+                  onMouseDown={() => {
+                    sound ? playOn() : doNothing();
+                  }}
+                  onMouseUp={() => {
+                    sound ? playOff() : doNothing();
+                  }}
                   to="my-work"
                   smooth={true}
                   duration={500}
@@ -94,6 +173,12 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks
                   className="nav-link"
+                  onMouseDown={() => {
+                    sound ? playOn() : doNothing();
+                  }}
+                  onMouseUp={() => {
+                    sound ? playOff() : doNothing();
+                  }}
                   to="contact"
                   smooth={true}
                   duration={500}
@@ -105,9 +190,9 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
               <a href={resume} download>
-              <NavBtn>
-                <NavBtnLink>My Resume</NavBtnLink>
-              </NavBtn>
+                <NavBtn>
+                  <NavBtnLink>My Resume</NavBtnLink>
+                </NavBtn>
               </a>
             </NavMenu>
           </NavbarContainer>
