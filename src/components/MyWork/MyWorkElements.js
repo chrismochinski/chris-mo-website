@@ -157,7 +157,6 @@ transition: all 0.2s ease-in-out;
 &:hover {
     transition: all 0.2s ease-in-out;
     background: #309DE7;
-    /* font-size: 16px; */
   };
 
   @media screen and (max-width: 768px) {

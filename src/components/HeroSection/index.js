@@ -83,7 +83,9 @@ const HeroSection = () => {
               smooth={true}
               duration={500}
               exact="true"
-              offset={-80}
+              offset={-30
+              //offset mod due to scroll 
+              }
             >
               About Me {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>

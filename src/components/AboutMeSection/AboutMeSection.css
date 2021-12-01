@@ -1,10 +1,9 @@
 .puzzleImg {
-    max-width: 25%;
-    
+    max-width: 170px;
 }
 
 @media screen and (max-width: 480px) {
     .puzzleImg {
-        max-width: 150px;
+        max-width: 120px;
     }
 }
