@@ -19,23 +19,27 @@ import { useSelector } from 'react-redux';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const sound = useSelector((store) => store);
+  const sound = useSelector((store) => store.soundState.soundSetting);
+  const selectedPage = useSelector(store => store.setSelectedPage.selectedPage)
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  console.log('sound on HOME is', sound)
+  console.log('selected page HOME is:', selectedPage)
+
 
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle} sound={sound} />
-      <Navbar toggle={toggle} />
-      <HeroSection />
-      <AboutMeSection {...homeObjOne} />
-      <TechnologiesSection {...homeObjTwo} />
-      <MyWork {...homeObjThree} />
-      <Contact {...homeObjFour} />
-      <Footer sound={sound} />
+      <Sidebar isOpen={isOpen} toggle={toggle} sound={sound} selectedPage={selectedPage} />
+      <Navbar toggle={toggle} selectedPage={selectedPage} />
+      <HeroSection sound={sound} selectedPage={selectedPage} />
+      <AboutMeSection {...homeObjOne} selectedPage={selectedPage} />
+      <TechnologiesSection {...homeObjTwo} selectedPage={selectedPage} />
+      <MyWork {...homeObjThree} selectedPage={selectedPage} />
+      <Contact {...homeObjFour} selectedPage={selectedPage} />
+      <Footer sound={sound} selectedPage={selectedPage} />
     </Router>
   );
 };

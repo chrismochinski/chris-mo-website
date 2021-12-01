@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Video from "../../videos/world.mp4";
 import { Button } from "../ButtonElement";
 import { Typewriter } from "react-simple-typewriter";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import useSound from "use-sound";
 
 import "./HeroSection.css";
@@ -22,9 +22,10 @@ import {
 import lowWhoosh from "../../sounds/deepBladeSwing.wav";
 import tap from "../../sounds/tap.wav";
 
-const HeroSection = () => {
+const HeroSection = ({sound}) => {
   const [hover, setHover] = useState(false);
-  const sound = useSelector((store) => store);
+  const dispatch = useDispatch();
+  // const sound = useSelector((store) => store);
 
   const [playOn] = useSound(tap, {volume: 0.3}); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
@@ -34,6 +35,11 @@ const HeroSection = () => {
   const onHover = () => {
     setHover(!hover);
   };
+
+  const dispatchPageSelectionToRedux = (page) => {
+    console.log('page is', page)
+    dispatch({type: "SET_SELECTED_PAGE", payload: page})
+  }
 
   return (
     <>
@@ -76,6 +82,7 @@ const HeroSection = () => {
               onMouseUp={() => {
                 sound ? playOff() : doNothing();
               }}
+              onClick={() => dispatchPageSelectionToRedux("about-me")}
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"
@@ -83,9 +90,7 @@ const HeroSection = () => {
               smooth={true}
               duration={500}
               exact="true"
-              offset={-30
-              //offset mod due to scroll 
-              }
+              offset={-80}
             >
               About Me {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>

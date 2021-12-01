@@ -27,7 +27,7 @@ import cards from "../../sounds/cards.wav";
 
 import resume from "../../images/MochinskiResume.pdf";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, selectedPage }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const [sound, setSound] = useState(false); //true = muted, false = on (default state on)
   const [page, setPage] = useState("");
@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
                 sound ? playOn() : doNothing();
               }}
               onMouseUp={() => {
-                sound && page !== "home" ? playOff() : doNothing();
+                sound && selectedPage !== "home" ? playOff() : doNothing();
               }}
               onClick={() => dispatchPageSelectionToRedux("home")}
               smooth={true}
@@ -125,7 +125,7 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page !== "about-me" ? playOff() : doNothing();
+                    sound && selectedPage !== "about-me" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("about-me")}
                   to="about-me"
@@ -145,7 +145,7 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page !== "technologies" ? playOff() : doNothing();
+                    sound && selectedPage !== "technologies" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("technologies")}
                   to="technologies"
@@ -165,7 +165,7 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page !== "my-work" ? playOff() : doNothing();
+                    sound && selectedPage !== "my-work" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("my-work")}
                   to="my-work"
@@ -185,7 +185,7 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page !== "contact" ? playOff() : doNothing();
+                    sound && selectedPage !== "contact" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("contact")}
                   to="contact"

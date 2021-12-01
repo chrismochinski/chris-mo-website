@@ -1,6 +1,6 @@
 import React from "react";
 import useSound from "use-sound";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "./Footer.css";
 
 import {
@@ -20,13 +20,19 @@ import resume from "../../images/MochinskiResume.pdf";
 import lowWhoosh from "../../sounds/deepBladeSwing.wav";
 import tap from "../../sounds/tap.wav";
 
-const Footer = ({ sound }) => {
+const Footer = ({ sound, selectedPage }) => {
+  const dispatch = useDispatch();
   // const sound = useSelector((store) => store); //deletelater
 
   const [playOn] = useSound(tap, { volume: 0.3 }); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
 
   const doNothing = () => {}; //do nothing
+
+  const dispatchPageSelectionToRedux = (page) => {
+    console.log('page is', page)
+    dispatch({type: "SET_SELECTED_PAGE", payload: page})
+  }
 
   return (
     <>
@@ -45,6 +51,7 @@ const Footer = ({ sound }) => {
                   sound ? playOff() : doNothing();
                 }}
                 to="home"
+                onClick={() => dispatchPageSelectionToRedux("home")}
                 smooth={true}
                 duration={500}
                 exact="true"
@@ -55,6 +62,8 @@ const Footer = ({ sound }) => {
 
               <FooterLink
                 to="about-me"
+                onClick={() => dispatchPageSelectionToRedux("about-me")}
+
                 onMouseDown={() => {
                   sound ? playOn() : doNothing();
                 }}
@@ -70,6 +79,8 @@ const Footer = ({ sound }) => {
               </FooterLink>
               <FooterLink
                 to="technologies"
+                onClick={() => dispatchPageSelectionToRedux("technologies")}
+
                 onMouseDown={() => {
                   sound ? playOn() : doNothing();
                 }}
@@ -90,6 +101,8 @@ const Footer = ({ sound }) => {
             <FooterLinkItems>
               <FooterLink
                 to="my-work"
+                onClick={() => dispatchPageSelectionToRedux("my-work")}
+
                 onMouseDown={() => {
                   sound ? playOn() : doNothing();
                 }}
@@ -106,11 +119,13 @@ const Footer = ({ sound }) => {
 
               <FooterLink
                 to="contact"
+                onClick={() => dispatchPageSelectionToRedux("contact")}
+
                 onMouseDown={() => {
                   sound ? playOn() : doNothing();
                 }}
                 onMouseUp={() => {
-                  sound ? playOff() : doNothing();
+                  sound && selectedPage !== "contact" ? playOff() : doNothing();
                 }}
                 smooth={true}
                 duration={500}

@@ -18,7 +18,7 @@ import tap from "../../sounds/tap.wav";
 import cards from "../../sounds/cards.wav";
 import resume from "../../images/MochinskiResume.pdf";
 
-const Sidebar = ({ isOpen, toggle, sound }) => {
+const Sidebar = ({ isOpen, toggle, sound, selectedPage }) => {
   // const sound = useSelector((store) => store); //deletelater might not be necessary w/ props!
 
   const [playOn] = useSound(tap, { volume: 0.3 }); //play mousedown tap
