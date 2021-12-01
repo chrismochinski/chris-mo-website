@@ -54,12 +54,17 @@ const Navbar = ({ toggle }) => {
       setSound(true)
       play()
     }
-    dispatchToRedux(); //call dispatch function for sound setting (right below)
+    dispatchSoundSettingToRedux(); //call dispatch function for sound setting (right below)
   }
 
-  const dispatchToRedux = () => {
+  const dispatchSoundSettingToRedux = () => {
     const action = { type: "SOUND_SETTING", payload: sound};
     dispatch(action);
+  }
+
+  const dispatchPageSelectionToRedux = (page) => {
+    console.log('page is', page)
+    dispatch({type: "SET_SELECTED_PAGE", payload: page})
   }
 
 
@@ -86,9 +91,9 @@ const Navbar = ({ toggle }) => {
                 sound ? playOn() : doNothing();
               }}
               onMouseUp={() => {
-                sound && page != "home" ? playOff() : doNothing();
+                sound && page !== "home" ? playOff() : doNothing();
               }}
-              onClick={() => setPage("home")}
+              onClick={() => dispatchPageSelectionToRedux("home")}
               smooth={true}
               duration={500}
               spy={true}
@@ -120,9 +125,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page != "about-me" ? playOff() : doNothing();
+                    sound && page !== "about-me" ? playOff() : doNothing();
                   }}
-                  onClick={() => setPage("about-me")}
+                  onClick={() => dispatchPageSelectionToRedux("about-me")}
                   to="about-me"
                   smooth={true}
                   duration={500}
@@ -140,9 +145,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page != "technologies" ? playOff() : doNothing();
+                    sound && page !== "technologies" ? playOff() : doNothing();
                   }}
-                  onClick={() => setPage("technologies")}
+                  onClick={() => dispatchPageSelectionToRedux("technologies")}
                   to="technologies"
                   smooth={true}
                   duration={500}
@@ -160,9 +165,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page != "my-work" ? playOff() : doNothing();
+                    sound && page !== "my-work" ? playOff() : doNothing();
                   }}
-                  onClick={() => setPage("my-work")}
+                  onClick={() => dispatchPageSelectionToRedux("my-work")}
                   to="my-work"
                   smooth={true}
                   duration={500}
@@ -180,9 +185,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && page != "contact" ? playOff() : doNothing();
+                    sound && page !== "contact" ? playOff() : doNothing();
                   }}
-                  onClick={() => setPage("contact")}
+                  onClick={() => dispatchPageSelectionToRedux("contact")}
                   to="contact"
                   smooth={true}
                   duration={500}

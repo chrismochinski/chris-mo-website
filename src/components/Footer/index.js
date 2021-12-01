@@ -20,8 +20,8 @@ import resume from "../../images/MochinskiResume.pdf";
 import lowWhoosh from "../../sounds/deepBladeSwing.wav";
 import tap from "../../sounds/tap.wav";
 
-const Footer = () => {
-  const sound = useSelector((store) => store);
+const Footer = ({ sound }) => {
+  // const sound = useSelector((store) => store); //deletelater
 
   const [playOn] = useSound(tap, { volume: 0.3 }); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh

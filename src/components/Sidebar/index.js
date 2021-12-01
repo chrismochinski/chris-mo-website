@@ -18,14 +18,15 @@ import tap from "../../sounds/tap.wav";
 import cards from "../../sounds/cards.wav";
 import resume from "../../images/MochinskiResume.pdf";
 
-const Sidebar = ({ isOpen, toggle }) => {
-  const sound = useSelector((store) => store);
+const Sidebar = ({ isOpen, toggle, sound }) => {
+  // const sound = useSelector((store) => store); //deletelater might not be necessary w/ props!
 
   const [playOn] = useSound(tap, { volume: 0.3 }); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
   const [playActive] = useSound(cards, { volume: 0.4 }); //play cards
 
   const doNothing = () => {}; //do nothing
+
 
   return (
     <>

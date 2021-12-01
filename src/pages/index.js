@@ -15,24 +15,27 @@ import {
 } from "../components/TechnologiesSection/Data";
 import Contact from "../components/ContactSection";
 import Footer from "../components/Footer";
+import { useSelector } from 'react-redux';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const sound = useSelector((store) => store);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} sound={sound} />
       <Navbar toggle={toggle} />
       <HeroSection />
       <AboutMeSection {...homeObjOne} />
       <TechnologiesSection {...homeObjTwo} />
       <MyWork {...homeObjThree} />
       <Contact {...homeObjFour} />
-      <Footer />
+      <Footer sound={sound} />
     </Router>
   );
 };
