@@ -21,9 +21,6 @@ const MyWork = () => {
     <>
       <MyWorkContainer id="my-work">
         <MyWorkH1>My Work</MyWorkH1>
-        {/* <MyWorkSubtitle>
-          ( tip: my READMEs are detailed with GIFs )
-        </MyWorkSubtitle> */}
         <MyWorkWrapper>
           <MyWorkCard>
             <a

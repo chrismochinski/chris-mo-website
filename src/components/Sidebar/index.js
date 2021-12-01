@@ -16,7 +16,6 @@ import {
 import lowWhoosh from "../../sounds/deepBladeSwing.wav";
 import tap from "../../sounds/tap.wav";
 import cards from "../../sounds/cards.wav";
-
 import resume from "../../images/MochinskiResume.pdf";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -26,18 +25,19 @@ const Sidebar = ({ isOpen, toggle }) => {
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
   const [playActive] = useSound(cards, { volume: 0.4 }); //play cards
 
-
   const doNothing = () => {}; //do nothing
 
   return (
+    <>
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}
-      onMouseDown={() => {
-        sound ? playOn() : doNothing();
-      }}
-      onMouseUp={() => {
-        sound ? playActive() : doNothing();
-      }}
+      <Icon
+        onClick={toggle}
+        onMouseDown={() => {
+          sound ? playOn() : doNothing();
+        }}
+        onMouseUp={() => {
+          sound ? playActive() : doNothing();
+        }}
       >
         <CloseIcon />
       </Icon>
@@ -120,6 +120,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
+    </>
   );
 };
 

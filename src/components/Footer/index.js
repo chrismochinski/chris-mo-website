@@ -29,10 +29,10 @@ const Footer = () => {
   const doNothing = () => {}; //do nothing
 
   return (
+    <>
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
-          {/* <FooterLinkTitle>Footer Heading</FooterLinkTitle> */}
 
           <FooterLinksWrapper>
             <FooterLinkItems>
@@ -135,6 +135,7 @@ const Footer = () => {
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>
+    </>
   );
 };
 

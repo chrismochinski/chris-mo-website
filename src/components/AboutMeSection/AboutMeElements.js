@@ -32,14 +32,18 @@ export const AboutMeRow = styled.div`
 `;
 
 export const Column = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 100px;
   padding: 0 15px;
+
+  @media screen and (max-width: 480px) {
+margin-bottom: 180px;
+  }
 `;
 
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   text-align: center;
 `; 
 
@@ -66,7 +70,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-size: 20px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#f7f8fa")};
@@ -74,6 +78,11 @@ export const Subtitle = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 18px;
   }
+`;
+
+export const ImgWrapper = styled.div`
+    display: flex;
+  justify-content: center;
 `;
 
 

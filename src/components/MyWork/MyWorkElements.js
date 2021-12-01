@@ -75,15 +75,17 @@ export const MyWorkIcon = styled.img`
 export const MyWorkH1 = styled.h1`
 /* font-family: 'Bitter', serif; //fix ?? */
 
- font-size: 2.4rem;
+ font-size: 3.4rem;
   color: #fff;
+  margin-top: -70px;
   margin-bottom: 40px;
   border-bottom: 4px solid #29FFB9;
   text-transform: uppercase; //research
-  line-height: 42px;
+  line-height: 48px;
 
   @media screen and (max-width: 480px) {
     font-size: 2.8rem;
+    margin-top: 0;
   }
 `;
 

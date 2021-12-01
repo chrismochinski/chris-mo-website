@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Video from "../../videos/world.mp4";
 import { Button } from "../ButtonElement";
 import { Typewriter } from "react-simple-typewriter";
+import { useSelector } from "react-redux";
+import useSound from "use-sound";
 
 import "./HeroSection.css";
 
@@ -17,8 +19,17 @@ import {
   ArrowRight,
 } from "./HeroElements";
 
+import lowWhoosh from "../../sounds/deepBladeSwing.wav";
+import tap from "../../sounds/tap.wav";
+
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
+  const sound = useSelector((store) => store);
+
+  const [playOn] = useSound(tap, {volume: 0.3}); //play mousedown tap
+  const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
+
+  const doNothing = () => {}; //do nothing
 
   const onHover = () => {
     setHover(!hover);
@@ -28,13 +39,7 @@ const HeroSection = () => {
     <>
       <HeroContainer id="home">
         <HeroBg>
-          <VideoBg
-            autoPlay
-            loop
-            muted
-            type="video/mp4"
-            src={Video}
-          />
+          <VideoBg autoPlay loop muted type="video/mp4" src={Video} />
         </HeroBg>
         <HeroContent>
           <HeroH1>My Name is Mo,</HeroH1>
@@ -52,7 +57,6 @@ const HeroSection = () => {
                 " CSS",
                 " coffee",
                 " React Native",
-
               ]}
               loop={false}
               cursor
@@ -66,6 +70,12 @@ const HeroSection = () => {
           <HeroBtnWrapper>
             <Button
               to="about-me"
+              onMouseDown={() => {
+                sound ? playOn() : doNothing();
+              }}
+              onMouseUp={() => {
+                sound ? playOff() : doNothing();
+              }}
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"

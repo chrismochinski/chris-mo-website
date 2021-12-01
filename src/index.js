@@ -4,6 +4,8 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 
+// single reducer for sound state 
+// true = muted, false = sound on
 const soundState = (state = true, action) => {
   if(action.type === "SOUND_SETTING") {
     return !action.payload;

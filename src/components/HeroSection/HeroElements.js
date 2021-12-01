@@ -12,6 +12,10 @@ height: 880px;
 position: relative; //fix remove fits vid better
 z-index: 1; 
 
+@media screen and (max-width: 480px) {
+    margin-top: -80px;
+}
+
 :before {
     content: '';
     position: absolute;

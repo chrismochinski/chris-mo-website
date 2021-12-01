@@ -30,6 +30,7 @@ import resume from "../../images/MochinskiResume.pdf";
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const [sound, setSound] = useState(false); //true = muted, false = on (default state on)
+  const [page, setPage] = useState("");
   const dispatch = useDispatch();
 
   const changeNav = () => {
@@ -85,8 +86,9 @@ const Navbar = ({ toggle }) => {
                 sound ? playOn() : doNothing();
               }}
               onMouseUp={() => {
-                sound ? playOff() : doNothing();
+                sound && page != "home" ? playOff() : doNothing();
               }}
+              onClick={() => setPage("home")}
               smooth={true}
               duration={500}
               spy={true}
@@ -118,8 +120,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound ? playOff() : doNothing();
+                    sound && page != "about-me" ? playOff() : doNothing();
                   }}
+                  onClick={() => setPage("about-me")}
                   to="about-me"
                   smooth={true}
                   duration={500}
@@ -137,8 +140,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound ? playOff() : doNothing();
+                    sound && page != "technologies" ? playOff() : doNothing();
                   }}
+                  onClick={() => setPage("technologies")}
                   to="technologies"
                   smooth={true}
                   duration={500}
@@ -156,8 +160,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound ? playOff() : doNothing();
+                    sound && page != "my-work" ? playOff() : doNothing();
                   }}
+                  onClick={() => setPage("my-work")}
                   to="my-work"
                   smooth={true}
                   duration={500}
@@ -175,8 +180,9 @@ const Navbar = ({ toggle }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound ? playOff() : doNothing();
+                    sound && page != "contact" ? playOff() : doNothing();
                   }}
+                  onClick={() => setPage("contact")}
                   to="contact"
                   smooth={true}
                   duration={500}
