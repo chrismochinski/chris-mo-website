@@ -1,6 +1,6 @@
 import React from "react";
 import useSound from "use-sound";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import "./Footer.css";
 
 import {
@@ -22,7 +22,6 @@ import tap from "../../sounds/tap.wav";
 
 const Footer = ({ sound, selectedPage }) => {
   const dispatch = useDispatch();
-  // const sound = useSelector((store) => store); //deletelater
 
   const [playOn] = useSound(tap, { volume: 0.3 }); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh

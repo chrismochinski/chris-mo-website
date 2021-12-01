@@ -19,7 +19,6 @@ import cards from "../../sounds/cards.wav";
 import resume from "../../images/MochinskiResume.pdf";
 
 const Sidebar = ({ isOpen, toggle, sound, selectedPage }) => {
-  // const sound = useSelector((store) => store); //deletelater might not be necessary w/ props!
 
   const [playOn] = useSound(tap, { volume: 0.3 }); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh

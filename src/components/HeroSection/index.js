@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Video from "../../videos/world.mp4";
 import { Button } from "../ButtonElement";
 import { Typewriter } from "react-simple-typewriter";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import useSound from "use-sound";
 
 import "./HeroSection.css";
@@ -25,7 +25,6 @@ import tap from "../../sounds/tap.wav";
 const HeroSection = ({sound}) => {
   const [hover, setHover] = useState(false);
   const dispatch = useDispatch();
-  // const sound = useSelector((store) => store);
 
   const [playOn] = useSound(tap, {volume: 0.3}); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
