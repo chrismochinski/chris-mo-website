@@ -8,11 +8,11 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  ImgWrapper
+  ImgWrapper,
 } from "./AboutMeElements.js";
 
-import puzzlePieces from '../../images/puzzlePieces.png';
-
+import puzzlePieces from "../../images/puzzlePieces.png";
+import "./AboutMeSection.css";
 
 const AboutMeSection = ({
   lightBg,
@@ -22,9 +22,6 @@ const AboutMeSection = ({
   id,
   darkText,
 }) => {
-
-
-
   return (
     <>
       <AboutMeContainer lightBg={lightBg} id={id}>
@@ -40,7 +37,12 @@ const AboutMeSection = ({
               </Subtitle>
             </TextWrapper>
             <ImgWrapper>
-            <img src={puzzlePieces} alt="puzzle" width="40%" style={{paddingTop: 0, marginTop: 0}}/>
+              <img
+                className="puzzleImg"
+                src={puzzlePieces}
+                alt="puzzle"
+                style={{ paddingTop: 0, marginTop: 0 }}
+              />
             </ImgWrapper>
           </Column>
         </AboutMeWrapper>

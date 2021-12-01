@@ -1,0 +1,10 @@
+.puzzleImg {
+    max-width: 25%;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .puzzleImg {
+        max-width: 150px;
+    }
+}
