@@ -56,12 +56,12 @@ const HeroSection = ({sound}) => {
                 " technology",
                 " puzzles",
                 " React",
+                " web design",
                 " JavaScript",
                 " rock & roll",
-                " web design",
                 " CSS",
                 " coffee",
-                " React Native",
+                " kindness",
               ]}
               loop={false}
               cursor
