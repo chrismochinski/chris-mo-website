@@ -14,6 +14,7 @@ import PassportImage from "../TechImages/PassportImage";
 import ApiImage from "../TechImages/ApiImage";
 import GitImage from "../TechImages/GitImage";
 import PhpImage from "../TechImages/PhpImage";
+import TailwindImage from "../TechImages/TailwindImage";
 
 
 import {
@@ -78,8 +79,9 @@ const TechnologiesSection = ({
                   <ExpressImage />
                   <PostgresImage />
                   <GitImage />
-                  <ApiImage />
+                  {/* <ApiImage /> */}
                   <PhpImage />
+                  <TailwindImage />
 
                 </Marquee>
               </ImgWrap>
