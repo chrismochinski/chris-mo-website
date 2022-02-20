@@ -13,6 +13,7 @@ import PostgresImage from "../TechImages/PostgresImage";
 import PassportImage from "../TechImages/PassportImage";
 import ApiImage from "../TechImages/ApiImage";
 import GitImage from "../TechImages/GitImage";
+import PhpImage from "../TechImages/PhpImage";
 
 
 import {
@@ -78,6 +79,7 @@ const TechnologiesSection = ({
                   <PostgresImage />
                   <GitImage />
                   <ApiImage />
+                  <PhpImage />
 
                 </Marquee>
               </ImgWrap>
