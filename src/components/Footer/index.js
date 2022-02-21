@@ -143,7 +143,7 @@ const Footer = ({ sound, selectedPage }) => {
         <SocialMedia>
           <SocialMediaWrap>
             <WebsiteRights>
-              Copyright © Chris "Mo" Mochinski 2021 - All rights reserved.
+              Copyright © Chris "Mo" Mochinski 2022 - All rights reserved.
             </WebsiteRights>
           </SocialMediaWrap>
         </SocialMedia>
