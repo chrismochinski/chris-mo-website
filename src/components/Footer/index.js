@@ -35,117 +35,120 @@ const Footer = ({ sound, selectedPage }) => {
 
   return (
     <>
-      <FooterContainer>
-        <FooterWrap>
-          <FooterLinksContainer>
-            <FooterLinksWrapper>
-              <FooterLinkItems>
-                <FooterLink
-                  className="top"
-                  onMouseDown={() => {
-                    sound ? playOn() : doNothing();
-                  }}
-                  onMouseUp={() => {
-                    sound ? playOff() : doNothing();
-                  }}
-                  to="home"
-                  onClick={() => dispatchPageSelectionToRedux("home")}
-                  smooth={true}
-                  duration={500}
-                  exact="true"
-                  offset={-80}
-                >
-                  Top
-                </FooterLink>
+    <FooterContainer>
+      <FooterWrap>
+        <FooterLinksContainer>
 
-                <FooterLink
-                  to="about-me"
-                  onClick={() => dispatchPageSelectionToRedux("about-me")}
-                  onMouseDown={() => {
-                    sound ? playOn() : doNothing();
-                  }}
-                  onMouseUp={() => {
-                    sound ? playOff() : doNothing();
-                  }}
-                  smooth={true}
-                  duration={500}
-                  exact="true"
-                  offset={-80}
-                >
-                  About Me
-                </FooterLink>
-                <FooterLink
-                  to="technologies"
-                  onClick={() => dispatchPageSelectionToRedux("technologies")}
-                  onMouseDown={() => {
-                    sound ? playOn() : doNothing();
-                  }}
-                  onMouseUp={() => {
-                    sound ? playOff() : doNothing();
-                  }}
-                  smooth={true}
-                  duration={500}
-                  exact="true"
-                  offset={-80}
-                >
-                  Technologies
-                </FooterLink>
-              </FooterLinkItems>
-            </FooterLinksWrapper>
+          <FooterLinksWrapper>
+            <FooterLinkItems>
+              <FooterLink
+                className="top"
+                onMouseDown={() => {
+                  sound ? playOn() : doNothing();
+                }}
+                onMouseUp={() => {
+                  sound ? playOff() : doNothing();
+                }}
+                to="home"
+                onClick={() => dispatchPageSelectionToRedux("home")}
+                smooth={true}
+                duration={500}
+                exact="true"
+                offset={-80}
+              >
+                Top
+              </FooterLink>
 
-            <FooterLinksWrapper>
-              <FooterLinkItems>
-                <FooterLink
-                  to="my-work"
-                  onClick={() => dispatchPageSelectionToRedux("my-work")}
-                  onMouseDown={() => {
-                    sound ? playOn() : doNothing();
-                  }}
-                  onMouseUp={() => {
-                    sound ? playOff() : doNothing();
-                  }}
-                  smooth={true}
-                  duration={500}
-                  exact="true"
-                  offset={-80}
-                >
-                  My Work
-                </FooterLink>
+              <FooterLink
+                to="about-me"
+                onClick={() => dispatchPageSelectionToRedux("about-me")}
 
-                <FooterLink
-                  to="contact"
-                  onClick={() => dispatchPageSelectionToRedux("contact")}
-                  onMouseDown={() => {
-                    sound ? playOn() : doNothing();
-                  }}
-                  onMouseUp={() => {
-                    sound && selectedPage !== "contact"
-                      ? playOff()
-                      : doNothing();
-                  }}
-                  smooth={true}
-                  duration={500}
-                  exact="true"
-                  offset={-80}
-                >
-                  Contact Me
-                </FooterLink>
+                onMouseDown={() => {
+                  sound ? playOn() : doNothing();
+                }}
+                onMouseUp={() => {
+                  sound ? playOff() : doNothing();
+                }}
+                smooth={true}
+                duration={500}
+                exact="true"
+                offset={-80}
+              >
+                About Me
+              </FooterLink>
+              <FooterLink
+                to="technologies"
+                onClick={() => dispatchPageSelectionToRedux("technologies")}
 
-                <a href={resume} download>
-                  <ResumeLink>My Resume</ResumeLink>
-                </a>
-              </FooterLinkItems>
-            </FooterLinksWrapper>
-          </FooterLinksContainer>
-          <SocialMedia>
-            <SocialMediaWrap>
-              <WebsiteRights>
-                Copyright © Chris "Mo" Mochinski 2021 - All rights reserved.
-              </WebsiteRights>
-            </SocialMediaWrap>
-          </SocialMedia>
-        </FooterWrap>
-      </FooterContainer>
+                onMouseDown={() => {
+                  sound ? playOn() : doNothing();
+                }}
+                onMouseUp={() => {
+                  sound ? playOff() : doNothing();
+                }}
+                smooth={true}
+                duration={500}
+                exact="true"
+                offset={-80}
+              >
+                Technologies
+              </FooterLink>
+            </FooterLinkItems>
+          </FooterLinksWrapper>
+
+          <FooterLinksWrapper>
+            <FooterLinkItems>
+              <FooterLink
+                to="my-work"
+                onClick={() => dispatchPageSelectionToRedux("my-work")}
+
+                onMouseDown={() => {
+                  sound ? playOn() : doNothing();
+                }}
+                onMouseUp={() => {
+                  sound ? playOff() : doNothing();
+                }}
+                smooth={true}
+                duration={500}
+                exact="true"
+                offset={-80}
+              >
+                My Work
+              </FooterLink>
+
+              <FooterLink
+                to="contact"
+                onClick={() => dispatchPageSelectionToRedux("contact")}
+
+                onMouseDown={() => {
+                  sound ? playOn() : doNothing();
+                }}
+                onMouseUp={() => {
+                  sound && selectedPage !== "contact" ? playOff() : doNothing();
+                }}
+                smooth={true}
+                duration={500}
+                exact="true"
+                offset={-80}
+              >
+                Contact Me
+              </FooterLink>
+
+              <a href={resume} download>
+                <ResumeLink>My Resume</ResumeLink>
+              </a>
+            </FooterLinkItems>
+          </FooterLinksWrapper>
+        </FooterLinksContainer>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <WebsiteRights>
+              Copyright © Chris "Mo" Mochinski 2022 - All rights reserved.
+            </WebsiteRights>
+          </SocialMediaWrap>
+        </SocialMedia>
+      </FooterWrap>
+    </FooterContainer>
     </>
   );
 };
