@@ -57,12 +57,6 @@ color: #fff;
 }
 `;
 
-// export const FooterLinkTitle = styled.h1`
-// font-size: 14px;
-// margin-bottom: 16px;
-// color: #fff;
-
-// `;
 
 export const FooterLink = styled(LinkS)`
 color: #fff;
@@ -112,7 +106,7 @@ margin-top: 12px;
 
 
 export const WebsiteRights = styled.small`
-  color: #fff;
+  color: #FFFFFF50;
   text-align: center;
 `;
 
