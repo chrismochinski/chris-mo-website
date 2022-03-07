@@ -42,8 +42,8 @@ grid-template-columns: 1fr; //research
 grid-template-rows: repeat(6, 50px); //research 
 text-align: center;
 
-@media screen and (max-width: 480px) { //fix breakpoint, change later //research
-    grid-template-rows: repeat(6, 60px) //fix //research
+@media screen and (max-width: 480px) { 
+    grid-template-rows: repeat(6, 60px) 
 }
 `;
 
@@ -76,7 +76,7 @@ background: #309DE7; //same teal green
 white-space: nowrap; //https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 padding: 16px 32px;
 color: #010606;
-font-size: 16px;
+font-size: 24px;
 outline: none;
 border: none;
 cursor: pointer;
