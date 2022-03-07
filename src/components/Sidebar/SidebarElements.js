@@ -39,7 +39,7 @@ color: #fff;
 export const SidebarMenu = styled.ul`
 display: grid;
 grid-template-columns: 1fr; //research
-grid-template-rows: repeat(6, 50px); //research --fix shrink second number, first numb ??
+grid-template-rows: repeat(6, 50px); //research 
 text-align: center;
 
 @media screen and (max-width: 480px) { //fix breakpoint, change later //research
@@ -51,7 +51,7 @@ export const SidebarLink = styled(LinkS)` //react SCROLL
  display: flex;
  align-items: center;
  justify-content: center;
- font-size: 1.5rem;
+ font-size: 1.75rem;
  text-decoration: none;
  list-style: none;
  transition: 0.2s ease-in-out;
