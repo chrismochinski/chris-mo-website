@@ -193,7 +193,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  // offset={-40} //optimize offset for contact page //fix?? was -80
                 >
                   Contact
                 </NavLinks>

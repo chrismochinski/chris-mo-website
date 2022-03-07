@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const MyWorkContainer = styled.div`
-  height: 800px;
+  height: 100vh; //optimize height test
+  /* height: 800px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,15 +78,18 @@ export const MyWorkH1 = styled.h1`
 
  font-size: 3.4rem;
   color: #fff;
-  margin-top: -70px;
+  margin-top: -160px; //optimize height test
   margin-bottom: 40px;
   border-bottom: 4px solid #29FFB9;
   text-transform: uppercase; //research
   line-height: 48px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 2.8rem;
     margin-top: 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2.8rem;
   }
 `;
 

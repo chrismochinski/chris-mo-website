@@ -136,7 +136,7 @@ export const NavLinks = styled(LinkS)`
 
 
 export const NavBtnLink = styled.a` //download resume link top right
-  border-radius: 10px; //rounded corner on button
+  border-radius: 10px; 
   background: #309DE7;
   white-space: nowrap;
   padding: 10px 14px; //TOP / RIGHT / BOTTOM / LEFT

@@ -8,13 +8,14 @@ justify-content: left;
 align-items: center;
 text-align: left; 
 padding: 0 30px;
-height: 880px;
-position: relative; //fix remove fits vid better
+height: 100vh; //optimize height test 
+/* height: 880px; */
+/* position: relative; //fix remove fits vid better */
 z-index: 1; 
 
-@media screen and (max-width: 480px) {
-    margin-top: -80px;
-}
+/* @media screen and (max-width: 480px) {
+    margin-top: -80px; //optimize height test
+} */
 
 :before {
     content: '';

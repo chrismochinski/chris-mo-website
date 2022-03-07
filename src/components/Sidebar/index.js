@@ -57,7 +57,7 @@ const Sidebar = ({ isOpen, toggle, sound, selectedPage }) => {
             duration={500}
             spy={true}
             exact="true"
-            // offset={-80}
+            offset={-80}
           >
             About
           </SidebarLink>
@@ -74,7 +74,7 @@ const Sidebar = ({ isOpen, toggle, sound, selectedPage }) => {
             duration={500}
             spy={true}
             exact="true"
-            // offset={-80}
+            // offset={-80} //optimize height test - was commented, keeping commented
           >
             Technologies
           </SidebarLink>
@@ -108,7 +108,7 @@ const Sidebar = ({ isOpen, toggle, sound, selectedPage }) => {
             duration={500}
             spy={true}
             exact="true"
-            // offset={-80}
+            // offset={80}
           >
             Contact
           </SidebarLink>

@@ -9,13 +9,17 @@ background-color: #101522;
 `;
 
 export const FooterWrap = styled.div`
-padding: 32px 24px;
+padding: 30px 24px; //optimize height test
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 max-width: 1100px;
 margin: 0 auto;
+
+/* @media screen and (max-width: 480px) {
+  padding-top: //fix??
+} */
 `;
 
 export const FooterLinksContainer = styled.div`

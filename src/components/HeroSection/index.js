@@ -22,11 +22,11 @@ import {
 import lowWhoosh from "../../sounds/deepBladeSwing.wav";
 import tap from "../../sounds/tap.wav";
 
-const HeroSection = ({sound}) => {
+const HeroSection = ({ sound }) => {
   const [hover, setHover] = useState(false);
   const dispatch = useDispatch();
 
-  const [playOn] = useSound(tap, {volume: 0.3}); //play mousedown tap
+  const [playOn] = useSound(tap, { volume: 0.3 }); //play mousedown tap
   const [playOff] = useSound(lowWhoosh, { volume: 0.4 }); //play mouseup whoosh
 
   const doNothing = () => {}; //do nothing
@@ -36,9 +36,9 @@ const HeroSection = ({sound}) => {
   };
 
   const dispatchPageSelectionToRedux = (page) => {
-    console.log('page is', page)
-    dispatch({type: "SET_SELECTED_PAGE", payload: page})
-  }
+    console.log("page is", page);
+    dispatch({ type: "SET_SELECTED_PAGE", payload: page });
+  };
 
   return (
     <>

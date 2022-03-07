@@ -5,15 +5,19 @@ export const ContactContainer = styled.div`
 
   background: #f9f9f9;
   padding: 100px 0;
-  height: 580;
+  height: 100vh; //optimize height test
+  /* height: 580; */
 
-  @media screen and (max-width: 768px) {
+  display: grid; //optimize height test
+  align-items: center; //optimize height test
+
+  /* @media screen and (max-width: 768px) {
     padding: 100px 0;
-  }
+  } */
 
-  @media screen and (max-width: 480px) {
-    height: 500;
-  }
+  /* @media screen and (max-width: 480px) {
+    height: 60vh; //optimize height test
+  } */
 `;
 
 export const ContactBg = styled.div`
@@ -33,26 +37,22 @@ overflow: hidden;
 export const ContactWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 350px;
-  /* width: 100%; */
-  /* max-width: 1100px; */
-  /* margin-right: auto;
-  margin-left: auto; */
-  margin-top: 100px;
+  /* height: 280px; */
+  /* margin-top: 200px; //optimize height test */
 
   padding: 0 24px;
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 180px; //optimize height test
     margin-left: 0;
     justify-content: center;
 
 }
 
     @media screen and (max-width: 480px) {
-    margin-top: 35px;
-    height: 280px;
+    margin-top: 140px; //optimize height test
+    /* height: 280px; */
 
   
   }
@@ -75,10 +75,16 @@ export const ContactRow = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */ //optimize height test
   text-align: left;
 
   @media screen and (max-width: 768px) {
+    padding-bottom: 90px; //optimize height test
+    text-align: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 50px; //optimize height test
     text-align: center;
   }
 `;
