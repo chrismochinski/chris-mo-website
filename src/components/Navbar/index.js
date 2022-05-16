@@ -78,9 +78,7 @@ const Navbar = ({ toggle, selectedPage }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <LeftContainer>
-              <VolumeButton onClick={changeSound}>
-                {sound ? <MdVolumeUp /> : <MdVolumeOff />}
-              </VolumeButton>
+              <VolumeButton onClick={changeSound}>{sound ? <MdVolumeUp /> : <MdVolumeOff />}</VolumeButton>
               <NavLogo
                 to="home"
                 onMouseDown={() => {
@@ -94,8 +92,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
-              >
+                offset={-80}>
                 Chris Mochinski
               </NavLogo>
             </LeftContainer>
@@ -107,8 +104,7 @@ const Navbar = ({ toggle, selectedPage }) => {
               }}
               onMouseUp={() => {
                 sound ? playActive() : doNothing();
-              }}
-            >
+              }}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
@@ -119,9 +115,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && selectedPage !== "about-me"
-                      ? playOff()
-                      : doNothing();
+                    sound && selectedPage !== "about-me" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("about-me")}
                   to="about-me"
@@ -129,8 +123,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
-                >
+                  offset={-80}>
                   About Me
                 </NavLinks>
               </NavItem>
@@ -141,9 +134,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && selectedPage !== "technologies"
-                      ? playOff()
-                      : doNothing();
+                    sound && selectedPage !== "technologies" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("technologies")}
                   to="technologies"
@@ -151,8 +142,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
-                >
+                  offset={-80}>
                   Technologies
                 </NavLinks>
               </NavItem>
@@ -163,9 +153,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && selectedPage !== "my-work"
-                      ? playOff()
-                      : doNothing();
+                    sound && selectedPage !== "my-work" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("my-work")}
                   to="my-work"
@@ -173,8 +161,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
-                >
+                  offset={-80}>
                   My Work
                 </NavLinks>
               </NavItem>
@@ -185,9 +172,7 @@ const Navbar = ({ toggle, selectedPage }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && selectedPage !== "contact"
-                      ? playOff()
-                      : doNothing();
+                    sound && selectedPage !== "contact" ? playOff() : doNothing();
                   }}
                   onClick={() => dispatchPageSelectionToRedux("contact")}
                   to="contact"
