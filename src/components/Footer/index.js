@@ -53,8 +53,7 @@ const Footer = ({ sound, selectedPage }) => {
                   smooth={true}
                   duration={500}
                   exact="true"
-                  offset={-80}
-                >
+                  offset={-80}>
                   Top
                 </FooterLink>
 
@@ -70,8 +69,7 @@ const Footer = ({ sound, selectedPage }) => {
                   smooth={true}
                   duration={500}
                   exact="true"
-                  offset={-80}
-                >
+                  offset={-80}>
                   About Me
                 </FooterLink>
                 <FooterLink
@@ -119,9 +117,7 @@ const Footer = ({ sound, selectedPage }) => {
                     sound ? playOn() : doNothing();
                   }}
                   onMouseUp={() => {
-                    sound && selectedPage !== "contact"
-                      ? playOff()
-                      : doNothing();
+                    sound && selectedPage !== "contact" ? playOff() : doNothing();
                   }}
                   smooth={true}
                   duration={500}
@@ -139,9 +135,7 @@ const Footer = ({ sound, selectedPage }) => {
           </FooterLinksContainer>
           <SocialMedia>
             <SocialMediaWrap>
-              <WebsiteRights>
-                Copyright © Chris "Mo" Mochinski 2022 - All rights reserved.
-              </WebsiteRights>
+              <WebsiteRights>Copyright © Chris "Mo" Mochinski 2022 - All rights reserved.</WebsiteRights>
             </SocialMediaWrap>
           </SocialMedia>
         </FooterWrap>

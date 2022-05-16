@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-
-
   background: #f9f9f9;
   padding: 100px 0;
   height: 100vh; //optimize height test
@@ -21,18 +19,15 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactBg = styled.div`
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-overflow: hidden;
-
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 `;
-
-
 
 export const ContactWrapper = styled.div`
   display: grid;
@@ -47,14 +42,11 @@ export const ContactWrapper = styled.div`
     margin-top: 180px; //optimize height test
     margin-left: 0;
     justify-content: center;
+  }
 
-}
-
-    @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     margin-top: 140px; //optimize height test
     /* height: 280px; */
-
-  
   }
 `;
 
@@ -62,15 +54,12 @@ export const ContactRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr); //research
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`}; //research
+  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)}; //research
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`}; //research
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}; //research
   }
 `;
-
 
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -90,17 +79,16 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #309DE7;
+  color: #309de7;
   font-size: 22px;
-  line-height: 16px; 
+  line-height: 16px;
   font-weight: 700;
-  letter-spacing: 1.4px; 
-  text-transform: uppercase; 
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
   margin-bottom: 12px;
 `;
 
 export const Heading = styled.h1`
-
   margin-bottom: 8px;
   font-size: 54px;
   line-height: 1.1;
@@ -128,35 +116,33 @@ export const Subtitle = styled.p`
   }
 `;
 
-
 export const Icon = styled.a`
-font-size: 55px;
-margin: 0 8px;
+  font-size: 55px;
+  margin: 0 8px;
 
-display: inline-block;
+  display: inline-block;
   position: relative;
   color: #0087ca;
- 
 
-&::after {
-    content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  transform-origin: center;
-  transition: transform 0.25s ease-out;
-};
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
 
-&:hover::after {
+  &:hover::after {
     transform: scaleX(1);
-  transform-origin: center;
-}
+    transform-origin: center;
+  }
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 55px;
     /* margin-right: 50px; */
   }
@@ -174,6 +160,3 @@ export const IconRow = styled.div`
   margin-left: 0;
   padding-right: 0;
 `;
-
-
-
