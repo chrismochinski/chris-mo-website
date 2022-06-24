@@ -8,17 +8,17 @@ position: fixed;
 z-index: 999;
 width: 100%;
 height: 100%;
-background: #0d0d0d; //super dark gray on red scale?
+background: #0d0d0d;
 display: grid;
 align-items: center;
 top: 0;
 left: 0;
 transition: 0.3s ease-in-out;
-opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')}; //optimize
-top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; //optimize
+opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
-export const CloseIcon = styled(FaTimes)` //the close (X) button in the open nav 
+export const CloseIcon = styled(FaTimes)`
 color: #fff;
 `;
 
@@ -38,8 +38,8 @@ color: #fff;
 
 export const SidebarMenu = styled.ul`
 display: grid;
-grid-template-columns: 1fr; //research
-grid-template-rows: repeat(6, 50px); //research 
+grid-template-columns: 1fr;
+grid-template-rows: repeat(6, 50px); 
 text-align: center;
 
 @media screen and (max-width: 480px) { 
@@ -60,7 +60,7 @@ export const SidebarLink = styled(LinkS)` //react SCROLL
  cursor: pointer;
 
  &:hover {
-     color: #309DE7; //the same teal green
+     color: #309DE7;
      transition: 0.2 ease-in-out;
  }
 `;
@@ -70,10 +70,10 @@ display: flex;
 justify-content: center;
 `;
 
-export const SidebarRoute = styled.a` //react router link
+export const SidebarRoute = styled.a`
 border-radius: 10px;
-background: #309DE7; //same teal green
-white-space: nowrap; //https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+background: #309DE7;
+white-space: nowrap;
 padding: 16px 32px;
 color: #010606;
 font-size: 24px;

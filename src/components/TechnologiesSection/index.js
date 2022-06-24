@@ -78,7 +78,6 @@ const TechnologiesSection = ({
                   <ExpressImage />
                   <PostgresImage />
                   <GitImage />
-                  {/* <ApiImage /> */}
                   <PhpImage />
                   <TailwindImage />
 

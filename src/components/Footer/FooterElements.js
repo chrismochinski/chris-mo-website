@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding: 30px 24px; //optimize height test
+  padding: 30px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;

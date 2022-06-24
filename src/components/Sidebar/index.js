@@ -1,6 +1,5 @@
 import React from "react";
 import useSound from "use-sound";
-import { useSelector } from "react-redux";
 
 import {
   SidebarContainer,
@@ -70,7 +69,7 @@ const Sidebar = ({ isOpen, toggle, sound, selectedPage }) => {
               duration={500}
               spy={true}
               exact="true"
-              // offset={-80} //optimize height test - was commented, keeping commented
+              // offset={-80}
             >
               Technologies
             </SidebarLink>
