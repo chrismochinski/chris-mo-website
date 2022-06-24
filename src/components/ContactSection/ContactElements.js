@@ -3,19 +3,11 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
   background: #f9f9f9;
   padding: 100px 0;
-  height: 100vh; //optimize height test
-  /* height: 580; */
+  height: 100vh;
 
-  display: grid; //optimize height test
-  align-items: center; //optimize height test
+  display: grid;
+  align-items: center;
 
-  /* @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  } */
-
-  /* @media screen and (max-width: 480px) {
-    height: 60vh; //optimize height test
-  } */
 `;
 
 export const ContactBg = styled.div`
@@ -32,21 +24,18 @@ export const ContactBg = styled.div`
 export const ContactWrapper = styled.div`
   display: grid;
   z-index: 1;
-  /* height: 280px; */
-  /* margin-top: 200px; //optimize height test */
 
   padding: 0 24px;
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    margin-top: 180px; //optimize height test
+    margin-top: 180px;
     margin-left: 0;
     justify-content: center;
   }
 
   @media screen and (max-width: 480px) {
-    margin-top: 140px; //optimize height test
-    /* height: 280px; */
+    margin-top: 140px; 
   }
 `;
 
@@ -64,16 +53,15 @@ export const ContactRow = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  /* padding-bottom: 60px; */ //optimize height test
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    padding-bottom: 90px; //optimize height test
+    padding-bottom: 90px;
     text-align: center;
   }
 
   @media screen and (max-width: 480px) {
-    padding-bottom: 50px; //optimize height test
+    padding-bottom: 50px;
     text-align: center;
   }
 `;
