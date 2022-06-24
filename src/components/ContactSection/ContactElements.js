@@ -100,7 +100,6 @@ export const Subtitle = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    /* margin-right: 50px; */
   }
 `;
 
@@ -132,12 +131,10 @@ export const Icon = styled.a`
 
   @media screen and (max-width: 768px) {
     font-size: 55px;
-    /* margin-right: 50px; */
   }
 
   @media screen and (max-width: 480px) {
     font-size: 40px;
-    /* margin-right: 50px; */
   }
 `;
 

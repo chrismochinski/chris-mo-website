@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import {Link} from 'react-router-dom';
 import { Link as LinkS } from "react-scroll";
 
 export const FooterContainer = styled.footer`
@@ -14,10 +13,6 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-
-  /* @media screen and (max-width: 480px) {
-  padding-top: //fix??
-} */
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -40,11 +35,10 @@ export const FooterLinksWrapper = styled.div`
 export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */ //moved to center
   margin: 8px;
   text-align: center;
   width: 160px;
-  box-sizing: border-box; //research
+  box-sizing: border-box;
   color: #fff;
 
   @media screen and(max-width: 420px) {
@@ -63,7 +57,7 @@ export const FooterLink = styled(LinkS)`
 
   &:hover {
     color: #29ffb9;
-    transition: 0.3s ease-out; //research
+    transition: 0.3s ease-out;
   }
 `;
 
@@ -76,7 +70,7 @@ export const ResumeLink = styled.a`
 
   &:hover {
     color: #29ffb9;
-    transition: 0.3s ease-out; //research
+    transition: 0.3s ease-out;
   }
 `;
 
