@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const MyWorkContainer = styled.div`
-  height: 100vh; //optimize height test
-  /* height: 800px; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +18,8 @@ export const MyWorkContainer = styled.div`
 `;
 
 export const MyWorkWrapper = styled.div`
-max-width: 1000px;
-margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -29,18 +28,15 @@ margin: 0 auto;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
-    /* padding-bottom: 60px; */
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
-    /* margin-bottom: 100px; //fix */
   }
 `;
 
-
-export const MyWorkCard = styled.div` 
+export const MyWorkCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -57,31 +53,21 @@ export const MyWorkCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
-
-/* 
-  @media screen and (max-width: 480px) {
-    max-width: 480px;
-  } */
 `;
 
 export const MyWorkIcon = styled.img`
   height: 150px;
   margin-bottom: 15px;
-
-  /* @media screen and (max-width: 480px) {
-      max-width: 300px;
-} */
 `;
 
 export const MyWorkH1 = styled.h1`
-/* font-family: 'Bitter', serif; //fix ?? */
 
  font-size: 3.4rem;
   color: #fff;
-  margin-top: -160px; //optimize height test
+  margin-top: -160px;
   margin-bottom: 40px;
   border-bottom: 4px solid #29FFB9;
-  text-transform: uppercase; //research
+  text-transform: uppercase;
   line-height: 48px;
 
   @media screen and (max-width: 768px) {
@@ -93,11 +79,10 @@ export const MyWorkH1 = styled.h1`
   }
 `;
 
-
 export const MyWorkSubtitle = styled.h2`
-margin-left: 10%;
-margin-right: 10%;
-padding-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 0;
   padding-bottom: 30px;
   text-align: center;
   font-size: 22px;
@@ -111,9 +96,6 @@ padding-top: 0;
   }
 `;
 
-
-
-
 export const MyWorkH2 = styled.h2`
   font-size: 1.3rem;
   margin-bottom: 10px;
@@ -121,90 +103,80 @@ export const MyWorkH2 = styled.h2`
 `;
 
 export const MyWorkP = styled.p`
- font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
   font-weight: 200;
 `;
 
-
-
-
-
 export const MyWorkButtonWrapper = styled.div`
-margin-top: 10px;
-display: flex;
-align-items: left;
-font-weight: 400;
-
+  margin-top: 10px;
+  display: flex;
+  align-items: left;
+  font-weight: 400;
 `;
 
-
 export const MyWorkTryItButton = styled.a`
-border-radius: 10px;
-background: #010606;
-white-space: nowrap; //research
-padding: 5px 9px;
-margin: 4px;
-margin-bottom: 0px;
-color: #fff;
-font-size: 16px;
-font-weight: 400;
-text-decoration: none;
-outline: none;
-border: none;
-cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  background: #010606;
+  white-space: nowrap;
+  padding: 5px 9px;
+  margin: 4px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
 
-&:hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
-    background: #309DE7;
-  };
+    background: #309de7;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
-  };
+  }
 
   @media screen and (max-width: 480px) {
     font-size: 24px;
-  };
+  } ;
 `;
 
 export const MyWorkGitHubButton = styled.a`
-border-radius: 10px;
-background: #010606;
-white-space: nowrap; //research
-padding: 5px 9px;
-margin: 4px;
-margin-bottom: 0px;
-color: #fff;
-font-size: 16px;
-font-weight: 400;
-text-decoration: none;
-outline: none;
-border: none;
-cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  background: #010606;
+  white-space: nowrap;
+  padding: 5px 9px;
+  margin: 4px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
 
-&:hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
-    background: #309DE7;
-    /* font-size: 16px; */
-  };
+    background: #309de7;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
-  };
+  }
 
   @media screen and (max-width: 480px) {
     font-size: 24px;
-  };
+  } ;
 `;
-
-
-
