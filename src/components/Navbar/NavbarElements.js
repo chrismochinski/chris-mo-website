@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -20,7 +20,6 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
-
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -30,12 +29,12 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const LeftContainer = styled.div` //container for speaker icon and name
+export const LeftContainer = styled.div`
+  //container for speaker icon and name
   display: flex;
 `;
 
 export const VolumeButton = styled.h2`
-  /* color: #29FFB9;  */
   justify-self: flex-start;
   text-align: left;
   margin-right: 4px;
@@ -47,17 +46,14 @@ export const VolumeButton = styled.h2`
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
-
   &:hover {
     color: #fff;
     transition: all 0.4s ease-in-out;
-
   }
 `;
 
 export const NavLogo = styled(LinkS)`
-
-  color: #29FFB9; //important 
+  color: #29ffb9; //important
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -68,11 +64,9 @@ export const NavLogo = styled(LinkS)`
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
-
   &:hover {
     color: #fff;
     transition: all 0.4s ease-in-out;
-
   }
 `;
 
@@ -116,28 +110,24 @@ export const NavBtn = styled.nav`
   }
 `;
 
-
-
 export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 .8rem;
+  padding: 0 0.8rem;
   height: 100%;
   cursor: pointer;
 
-  
   &.active {
-    border-bottom: 3px solid #309DE7;
-    
+    border-bottom: 3px solid #309de7;
   }
 `;
 
-
-export const NavBtnLink = styled.a` //download resume link top right
-  border-radius: 10px; 
-  background: #309DE7;
+export const NavBtnLink = styled.a`
+  //download resume link top right
+  border-radius: 10px;
+  background: #309de7;
   white-space: nowrap;
   padding: 10px 14px; //TOP / RIGHT / BOTTOM / LEFT
   color: #010606; //super dark robins egg blue, basically black
@@ -155,5 +145,3 @@ export const NavBtnLink = styled.a` //download resume link top right
     color: #010606; // super dark robins egg blue basically black
   }
 `;
-
-

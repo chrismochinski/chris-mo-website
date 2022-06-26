@@ -69,7 +69,6 @@ const HeroSection = ({ sound }) => {
               typeSpeed={90}
               deleteSpeed={60}
               delaySpeed={1000}
-              // onType={handleType}
             />
           </HeroP>
           <HeroBtnWrapper>
