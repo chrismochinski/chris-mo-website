@@ -3,9 +3,7 @@ import styled from "styled-components";
 export const TechnologiesContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
-  height: 100vh; //optimize height test
-  /* height: 800px; */
-  /* padding: 100px 0; */
+  height: 100vh; 
   padding-top: clamp(50px, 5vh, 280px);
 
   @media screen and (max-width: 768px) {
@@ -18,7 +16,6 @@ export const TechnologiesContainer = styled.div`
 
 export const TechnologiesWrapper = styled.div`
   display: grid;
-  /* align-items: center; */
   z-index: 1;
   height: 600px;
   width: 100%;
@@ -41,19 +38,18 @@ export const TechnologiesWrapper = styled.div`
 
 export const TechnologiesRow = styled.div`
   display: grid;
-  grid-auto-columns: minmax(auto, 1fr); //research
+  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`}; //research
+    imgStart ? `'col2 col1'` : `'col1 col2'`};
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`}; //research
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
 export const Column1 = styled.div`
-  /* margin-bottom: 15px; */
   padding: 0 24px;
   grid-area: col1;
 `;
@@ -80,8 +76,8 @@ export const TopLine = styled.div`
   color: #309de7;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 1.6px; //research
-  text-transform: uppercase; //research
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
   margin-bottom: 16px;
 `;
 
@@ -98,7 +94,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  /* max-width: 440px; //research */
   margin-top: 10px;
   margin-right: 0;
   font-size: 22px;
@@ -113,7 +108,7 @@ export const Subtitle = styled.p`
 
 export const BtnWrap = styled.div`
   display: flex;
-  justify-content: flex-start; //research
+  justify-content: flex-start;
 `;
 
 export const ImgWrap = styled.div`
