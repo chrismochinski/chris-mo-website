@@ -14,7 +14,8 @@ import PassportImage from "../TechImages/PassportImage";
 import GitImage from "../TechImages/GitImage";
 import PhpImage from "../TechImages/PhpImage";
 import TailwindImage from "../TechImages/TailwindImage";
-
+import TypescriptImage from "../TechImages/TypescriptImage";
+import SassImage from "../TechImages/SassImage";
 
 import {
   TechnologiesContainer,
@@ -59,14 +60,12 @@ const TechnologiesSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-
                 <Marquee
                   className="marquee"
                   gradientColor={[0, 6, 6]}
                   gradientWidth={40}
                   pauseOnHover={true}
-                  speed={90}
-                >
+                  speed={115}>
                   <PassportImage />
                   <HtmlImage />
                   <ReactImage />
@@ -75,12 +74,13 @@ const TechnologiesSection = ({
                   <MaterialUiImage />
                   <ReduxSagaImage />
                   <NodeImage />
+                  <SassImage />
                   <ExpressImage />
                   <PostgresImage />
                   <GitImage />
                   <PhpImage />
                   <TailwindImage />
-
+                  <TypescriptImage />
                 </Marquee>
               </ImgWrap>
             </Column2>
