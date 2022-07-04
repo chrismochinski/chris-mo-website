@@ -16,6 +16,7 @@ import PhpImage from "../TechImages/PhpImage";
 import TailwindImage from "../TechImages/TailwindImage";
 import TypescriptImage from "../TechImages/TypescriptImage";
 import SassImage from "../TechImages/SassImage";
+import AwsImage from "../TechImages/AwsImage";
 
 import {
   TechnologiesContainer,
@@ -81,6 +82,7 @@ const TechnologiesSection = ({
                   <PhpImage />
                   <TailwindImage />
                   <TypescriptImage />
+                  <AwsImage />
                 </Marquee>
               </ImgWrap>
             </Column2>
