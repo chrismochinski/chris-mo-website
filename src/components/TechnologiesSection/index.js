@@ -64,25 +64,153 @@ const TechnologiesSection = ({
                 <Marquee
                   className="marquee"
                   gradientColor={[0, 6, 6]}
-                  gradientWidth={40}
+                  gradientWidth={30}
                   pauseOnHover={true}
                   speed={115}>
-                  <PassportImage />
-                  <HtmlImage />
-                  <ReactImage />
-                  <JavascriptImage />
-                  <CssImage />
-                  <MaterialUiImage />
-                  <ReduxSagaImage />
-                  <NodeImage />
-                  <SassImage />
-                  <ExpressImage />
-                  <PostgresImage />
-                  <GitImage />
-                  <PhpImage />
-                  <TailwindImage />
-                  <TypescriptImage />
-                  <AwsImage />
+                  <PassportImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <HtmlImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <ReactImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <JavascriptImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <CssImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <MaterialUiImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <ReduxSagaImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <NodeImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <SassImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <ExpressImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <PostgresImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <GitImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <PhpImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <TailwindImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <TypescriptImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
+                  <AwsImage
+                    style={{
+                      "&:hover": {
+                        transform: "scale(1.125)",
+                        cursor: "pointer",
+                        transition: "transform 250ms ease-in-out",
+                      },
+                    }}
+                  />
                 </Marquee>
               </ImgWrap>
             </Column2>
