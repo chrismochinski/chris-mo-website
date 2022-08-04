@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TechnologiesContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
-  height: 100vh; 
+  height: 100vh;
   padding-top: clamp(50px, 5vh, 280px);
 
   @media screen and (max-width: 768px) {
@@ -27,12 +27,12 @@ export const TechnologiesWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     align-items: unset !important;
-    padding-top: 220px
+    padding-top: 220px;
   }
 
   @media screen and (max-width: 480px) {
     align-items: unset !important;
-    padding-top: 50px
+    padding-top: 50px;
   }
 `;
 
@@ -40,12 +40,10 @@ export const TechnologiesRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
   }
 `;
 
