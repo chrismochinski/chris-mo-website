@@ -17,8 +17,7 @@ export const AboutMeWrapper = styled.div`
   align-items: center;
   display: grid;
   z-index: 1;
-  height: 100vh; //optimize height test
-  /* height: 860px; */
+  height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -37,14 +36,12 @@ export const Column = styled.div`
   padding: 0 15px;
 
   @media screen and (max-width: 480px) {
-/* margin-bottom: 180px; */ //optimize height test - commented out for phone
   }
 `;
 
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  /* padding-bottom: 60px; */
   text-align: center;
 `; 
 

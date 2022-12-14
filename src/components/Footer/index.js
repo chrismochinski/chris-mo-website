@@ -105,7 +105,7 @@ const Footer = ({ sound, selectedPage }) => {
                   smooth={true}
                   duration={500}
                   exact="true"
-                  // offset={-80} //optimize height test - turned off - was scrollign from footer too far
+                  // offset={-80}
                 >
                   My Work
                 </FooterLink>
@@ -122,7 +122,7 @@ const Footer = ({ sound, selectedPage }) => {
                   smooth={true}
                   duration={500}
                   exact="true"
-                  offset={-80} //optimize height test - SLIGHT scroll when user goes from contact footer to contact button
+                  offset={-80} 
                 >
                   Contact Me
                 </FooterLink>

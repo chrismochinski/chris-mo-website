@@ -6,6 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
+<<<<<<< Updated upstream
   padding: 30px 24px;
   display: flex;
   flex-direction: column;
@@ -13,6 +14,15 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+=======
+padding: 30px 24px; //optimize height test
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 1100px;
+margin: 0 auto;
+>>>>>>> Stashed changes
 `;
 
 export const FooterLinksContainer = styled.div`
